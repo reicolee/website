@@ -1,0 +1,28 @@
+$lightColor: white;
+$darkColor: #0B1726;
+$darkBackground: $darkColor;
+
+$darkSpecialColor: #F2CB05;
+$lightSpecialColor: #A62648;
+
+$hoverLightBackground: $lightSpecialColor;
+$hoverDarkBackgroundColor: $darkSpecialColor;
+
+
+@mixin theme-main-colors($light-theme: true) {
+  @if $light-theme {
+    color: $darkColor;
+  } @else {
+    background-color: #0B1726;
+    color: $lightColor;
+  }
+}
+
+
+@mixin hover-colors($light-theme: true) {
+  @if $light-theme {
+    color: $hoverLightBackground;
+  } @else {
+    color: $hoverDarkBackgroundColor;
+  }
+}

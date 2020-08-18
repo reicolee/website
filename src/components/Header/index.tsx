@@ -8,7 +8,8 @@ const Header = ({ siteTitle }) => (
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
-  >
+  > 
+    <a className="skip-to-main-content" href="#content">Skip to main content</a>
     <div
       style={{
         margin: `0 auto`,
