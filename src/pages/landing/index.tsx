@@ -22,7 +22,7 @@ const IndexPage = () => (
           <p className="description">{DESCRIPTION}</p>
           <p className="companies">Currently <a className="companyLink" target="_blank" rel="nofollow noopener noreferrer" href="https://withdouble.com">@Double</a>.
           Formerly <a className="companyLink" target="_blank" rel="nofollow noopener noreferrer" href="https://getbento.com/">@BentoBox</a>.</p>
-          <a className="resumeBtn" aria-label="Reico's Resume" target="_blank" rel="nofollow noopener noreferrer" href={'/reico-resume.pdf'}>
+          <a className="resumeBtn" aria-label="Reico's Resume" target="_blank" rel="nofollow noopener noreferrer" href={'../../reico-resume.pdf'}>
             View resumé
             <FontAwesomeIcon icon={faExternalLinkAlt} className="external-link-icon"/>
           </a>
