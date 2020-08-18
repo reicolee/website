@@ -1,0 +1,78 @@
+@import '../../../styles/colors.scss';
+
+.left__sidebar {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      background-color: $darkColor;
+      margin: 25px auto;
+
+      .dark & {
+        background-color: $lightColor;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      background-color: $darkColor;
+      margin: 10px auto;
+
+      .dark & {
+        background-color: $lightColor;
+      }
+    }
+
+    li {
+      display: list-item;
+      text-align: center;
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+
+      a {
+        padding: 10px;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+        &:hover {
+          @include hover-colors($light-theme: true);
+          transform: translateY(-3px);
+
+          .dark & {
+            @include hover-colors($light-theme: false);
+          }
+        }
+
+        .social-icon {
+          height: 24px;
+          width: 24px;
+        }
+      }
+    }
+  }
+}

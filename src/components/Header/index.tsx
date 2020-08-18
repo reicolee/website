@@ -1,12 +1,10 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
 import ThemeSwitcher from './ThemeSwitcher'
 
 import "./style.scss"
 
-const Header = ({ siteTitle, setDark, isDark }) => (
+const Header = ({ setDark, isDark }) => (
   <>
     <a className="skip-to-main-content" href="#content">Skip to main content</a>
     <header className="navigation"> 
@@ -21,13 +19,5 @@ const Header = ({ siteTitle, setDark, isDark }) => (
     </header>
   </>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

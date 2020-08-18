@@ -10,33 +10,25 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../Header"
+import LeftMinSidebar from './LeftMiniSidebar'
 import "./style.scss"
 
 const Layout = ({ children }) => {
   const [isDark, setDark] = useState(true)
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+  
   return (
     <div className={`App ${isDark ? 'dark' : ''}`}>
       <Header 
-        siteTitle={data.site.siteMetadata.title} 
         setDark={() => setDark(!isDark)}
         isDark={isDark}
-      />
+        />
       <div
         style={{
           margin: `0 50px`,
           maxWidth: `100%`,
         }}
-      >
+        >
+        <LeftMinSidebar />
         <main>{children}</main>
       </div>
     </div>
@@ -48,3 +40,14 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+// const data = useStaticQuery(graphql`
+//   query SiteTitleQuery {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `)
+//   siteTitle={data.site.siteMetadata.title} 
