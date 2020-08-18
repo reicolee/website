@@ -1,0 +1,62 @@
+@import '../../styles/colors.scss';
+
+.skip-to-main-content {
+  position: absolute;
+  top: auto;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  z-index: -99;
+  overflow: hidden;
+
+  &:focus, &:active {
+    color: $lightColor;
+    background-color: #737373;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    width: auto;  
+    height: auto;
+    z-index: 99;
+    outline: 0px;
+    border-radius: 3px;
+    padding: 18px 23px;
+    text-decoration: none;
+    overflow: auto;
+  }
+}
+
+header {
+  margin: 0 auto;
+  height: 120px;
+  margin: 0 50px;
+
+  nav {
+    height: 100%;
+    position: relative;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+  }
+}
+
+
+.icon-rl-icon {
+  &:before {
+    content: "\e900";
+    font-size: 56px;
+    position: relative;
+    top: 2rem;
+  }
+ 
+   &:hover {
+     @include hover-colors($light-theme: true);
+     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+   
+     .dark & {
+       @include hover-colors($light-theme: false);
+     }
+   }
+ }

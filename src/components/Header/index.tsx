@@ -2,34 +2,24 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  > 
+import ThemeSwitcher from './ThemeSwitcher'
+
+import "./style.scss"
+
+const Header = ({ siteTitle, setDark, isDark }) => (
+  <>
     <a className="skip-to-main-content" href="#content">Skip to main content</a>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+    <header className="navigation"> 
+      <nav>
+        <span className="icon-rl-icon"></span>
+        <ThemeSwitcher
+            name="Theme color switcher"
+            checked={isDark}
+            onChange={() => setDark(!isDark)}
+        />
+      </nav>
+    </header>
+  </>
 )
 
 Header.propTypes = {
