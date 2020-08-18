@@ -34,9 +34,12 @@
   width: 100vw;
   min-height: 100vh;
   overflow-y: scroll;
+  display: grid;
   @include theme-main-colors($light-theme: true);
 
   &.dark {
     @include theme-main-colors($light-theme: false);
   }
 }
+
+
