@@ -1,5 +1,5 @@
-@import '../../styles/colors.scss';
-@import '../../styles/reset.scss';
+@import 'src/styles/colors.scss';
+@import 'src/styles/reset.scss';
 
 @include reset-html-elements;
 
@@ -34,12 +34,18 @@
   width: 100vw;
   min-height: 100vh;
   overflow-y: scroll;
-  display: grid;
   @include theme-main-colors($light-theme: true);
 
   &.dark {
     @include theme-main-colors($light-theme: false);
   }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: auto;
+  margin: 0 50px;
 }
 
 

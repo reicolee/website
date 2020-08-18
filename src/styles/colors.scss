@@ -13,7 +13,7 @@ $hoverDarkBackgroundColor: $darkSpecialColor;
   @if $light-theme {
     color: $darkColor;
   } @else {
-    background-color: #0B1726;
+    background-color: $darkColor;
     color: $lightColor;
   }
 }

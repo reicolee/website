@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 
-import Header from "../Header"
+import Header from "src/components/Header"
 import LeftMinSidebar from './LeftMiniSidebar'
+
 import "./style.scss"
 
 const Layout = ({ children }) => {
