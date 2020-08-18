@@ -1,4 +1,5 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/breakpoints.scss';
 
 .skip-to-main-content {
   position: absolute;
@@ -32,6 +33,10 @@ header {
   margin: 0 auto;
   height: 120px;
   margin: 0 50px;
+
+  @include media("<=phone") {
+    margin: 0 25px;
+  }
 
   nav {
     height: 100%;

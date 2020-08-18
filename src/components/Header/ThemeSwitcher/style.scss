@@ -1,4 +1,6 @@
 @import '../../../styles/colors.scss';
+@import '../../../styles/breakpoints.scss';
+
 
 .wrapperLabel {
   display: inline-block;
@@ -8,6 +10,14 @@
   right: 2.5rem;
   top: 2rem;
   color: $darkColor;
+
+  @include media("<=tablet") {
+    right: 0.5rem;
+  }
+
+  @include media("<=phone") {
+    right: 0.7rem;
+  }
 
   &.dark {
     color: $lightColor;
