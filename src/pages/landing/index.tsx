@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
-import { TAGLINE, DESCRIPTION, ABOUT_ME } from 'src/constants'
+import { TAGLINE, DESCRIPTION } from 'src/constants'
 import portrait from 'src/images/portrait.jpg'
 
 import Layout from "src/components/Layout"

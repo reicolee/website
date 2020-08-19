@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+import { faSun, faMoon, faAdjust } from '@fortawesome/free-solid-svg-icons'
 
 import './style.scss';
 
@@ -32,6 +32,9 @@ export default ({
       <span className='slider' />
       <span className='sliderLabel sliderLabel__right'>
         <FontAwesomeIcon icon={faMoon} className='icon' />
+      </span>
+      <span className="mobileThemeSwitcher">
+        <FontAwesomeIcon icon={faAdjust} onClick={onChange} className='mobileSwitcherIcon' />
       </span>
     </label>
   </>

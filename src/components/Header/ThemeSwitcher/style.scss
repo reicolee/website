@@ -16,7 +16,9 @@
   }
 
   @include media("<=phone") {
-    right: 0.7rem;
+    right: -0.3rem;
+    width: 40px;
+    cursor: pointer;
   }
 
   &.dark {
@@ -38,6 +40,10 @@ input {
   width: 3rem;
   background-color: #d3d3d3;
   transition: 0.4s;
+
+  @include media("<=phone") {
+    display: none;
+  }
 }
 
 .slider:before {
@@ -78,5 +84,34 @@ input:checked + .slider:before {
 
   &__right {
     left: 12.3rem;
+  }
+
+  @include media("<=phone") {
+    display: none;
+  }
+}
+
+
+.mobileThemeSwitcher {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 11rem;
+  right: 0;
+  bottom: 0;
+  
+  @include media("<=phone") {
+    display: inline-block;
+    left: 0.5rem;
+    pointer-events: none;
+  }
+  
+  .mobileSwitcherIcon {
+    color: $darkColor;
+  
+
+    .dark & {
+      color: $lightColor;
+    }
   }
 }
