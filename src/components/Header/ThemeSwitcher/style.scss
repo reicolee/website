@@ -19,6 +19,7 @@
     right: -0.3rem;
     width: 40px;
     cursor: pointer;
+    padding: 20px;
   }
 
   &.dark {
@@ -108,8 +109,7 @@ input:checked + .slider:before {
   
   .mobileSwitcherIcon {
     color: $darkColor;
-  
-
+    font-size: 20px;
     .dark & {
       color: $lightColor;
     }
