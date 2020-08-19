@@ -7,7 +7,7 @@ section {
     display: grid;
     grid-template-columns: 50% 50%;
 
-    @include media("<=tablet") {
+    @include media("<=desktop") {
       grid-template-columns: 100%;
       grid-template-areas: 
       'introTwo'
@@ -23,7 +23,7 @@ section {
       &__1 {
         align-items: center;
         
-        @include media('<=tablet') {
+        @include media('<=desktop') {
           grid-area: introOne;
         }
 
@@ -34,6 +34,10 @@ section {
           margin-top: 5rem;
           margin-left: 12rem;
           text-align: start;
+
+          @include media(">tablet", "<=desktop") {
+            margin-left: 7rem;
+          }
 
           @include media("<=tablet") {
             margin-top: 3rem;
@@ -148,7 +152,7 @@ section {
       &__2 {
         align-items: center;
 
-        @include media('<=tablet') {
+        @include media('<=desktop') {
           grid-area: introTwo;
         }
 
@@ -157,7 +161,6 @@ section {
           border-radius: 50%;
           height: 350px;
           width: 350px;
-          
           
           @include media("<=tablet") {
             margin-top: 0;

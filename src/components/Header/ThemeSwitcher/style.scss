@@ -11,7 +11,7 @@
   top: 2rem;
   color: $darkColor;
 
-  @include media("<=tablet") {
+  @include media("<=desktop") {
     right: 0.5rem;
   }
 
