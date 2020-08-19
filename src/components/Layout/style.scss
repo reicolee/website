@@ -1,5 +1,6 @@
-@import 'src/styles/colors.scss';
-@import 'src/styles/reset.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/reset.scss';
+@import '../../styles/breakpoints.scss';
 
 @include reset-html-elements;
 
@@ -45,5 +46,4 @@ main {
   display: grid;
   margin: 0 50px;
 }
-
 

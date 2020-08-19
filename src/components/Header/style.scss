@@ -54,6 +54,10 @@ header {
     font-size: 56px;
     position: relative;
     top: 2rem;
+
+    @include media("<=phone") {
+      font-size: 48px;
+    }
   }
  
    &:hover {

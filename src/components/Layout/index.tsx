@@ -1,8 +1,10 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 
+
 import Header from "src/components/Header"
 import LeftMinSidebar from './LeftMiniSidebar'
+import Footer from './Footer'
 
 import "./style.scss"
 
@@ -17,13 +19,14 @@ const Layout = ({ children }) => {
         />
       <div
         style={{
-          margin: `0 50px`,
+          margin: `0 50px 100px 50px`,
           maxWidth: `100%`,
         }}
         >
         <LeftMinSidebar />
         <main id="content">{children}</main>
       </div>
+      <Footer />
     </div>
   )
 }

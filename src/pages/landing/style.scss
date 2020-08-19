@@ -1,16 +1,31 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/breakpoints.scss';
 
 
 section {
   &.intro {
     display: grid;
     grid-template-columns: 50% 50%;
+
+    @include media("<=tablet") {
+      grid-template-columns: 100%;
+      grid-template-areas: 
+      'introTwo'
+      'introOne';
+    }
+
+
     // margin-bottom: 20%;
     .col {
       display: flex;
       flex-direction: column;
+
       &__1 {
         align-items: center;
+        
+        @include media('<=tablet') {
+          grid-area: introOne;
+        }
 
         .tagline-section {
           display: flex;
@@ -19,6 +34,11 @@ section {
           margin-top: 5rem;
           margin-left: 12rem;
           text-align: start;
+
+          @include media("<=tablet") {
+            margin-top: 3rem;
+            margin-left: 0;
+          }
 
           .greeting {
             font-size: 32px;
@@ -93,11 +113,23 @@ section {
 
       &__2 {
         align-items: center;
+
+        @include media('<=tablet') {
+          grid-area: introTwo;
+        }
+
         .portrait {
           margin-top: 18%;
           border-radius: 50%;
           height: 350px;
           width: 350px;
+          
+          
+          @include media("<=tablet") {
+            margin-top: 0;
+            height: 250px;
+            width: 250px;
+          }
         }
       }
     }
