@@ -35,7 +35,8 @@ header {
   margin: 0 50px;
 
   @include media("<=phone") {
-    margin: 0 25px;
+    margin: 0 24px;
+    height: 105px;
   }
 
   nav {

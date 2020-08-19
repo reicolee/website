@@ -40,9 +40,17 @@ section {
             margin-left: 0;
           }
 
+          @include media("<=phone") {
+            margin-top: 0.5rem;
+          }
+
           .greeting {
             font-size: 32px;
             font-weight: bold;
+
+            @include media("<=phone") {
+              font-size: 18px;
+            }
           }
 
           .heading {
@@ -55,21 +63,39 @@ section {
                 color: $darkSpecialColor;
               }
             }
+
+
+            @include media("<=phone") {
+              font-size: 40px;
+            }
           }
         
           .tagline {
             font-size: 32px;
             line-height: 130%;
+
+
+            @include media("<=phone") {
+              font-size: 20px;
+            }
           }
 
           .description {
             margin-top: 2rem;
             font-size: 16px;
             line-height: 160%;
+
+            @include media("<=phone") {
+              font-size: 14px;
+            }
           }
 
           .companies {
             margin-top: 0.5rem;
+
+            @include media("<=phone") {
+              font-size: 14px;
+            }
             .companyLink {
               cursor: pointer;
               color: inherit;
@@ -106,6 +132,14 @@ section {
             .external-link-icon {
               margin-left: 5%;
               font-size: 20px;
+
+              @include media('<=phone') {
+                font-size: 18px;
+              }
+            }
+
+            @include media('<=phone') {
+              font-size: 20px;
             }
           }
         }
@@ -129,6 +163,11 @@ section {
             margin-top: 0;
             height: 250px;
             width: 250px;
+          }
+
+          @include media("<=phone") {
+            height: 180px;
+            width: 180px;
           }
         }
       }
