@@ -26,6 +26,7 @@
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
     "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-sitemap": "^2.4.11",
     "node-sass": "^4.14.1",
     "prettier": "2.0.5",
     "typescript": "^3.9.7"

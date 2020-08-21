@@ -23,6 +23,7 @@ module.exports = {
       }
     ],
     author: `@Reico`,
+    siteUrl: 'https://reicolee.com/'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -51,6 +52,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-root-import`
+    `gatsby-plugin-root-import`,
+    `gatsby-plugin-sitemap`
   ],
 }
