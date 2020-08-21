@@ -6,6 +6,7 @@ section {
   &.intro {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-bottom: 150px;
 
     @include media("<=desktop") {
       grid-template-columns: 100%;
@@ -179,7 +180,7 @@ section {
   }
 
   &.about {
-    margin: 240px auto 0 auto;
+    margin: 150px auto 0 auto;
     display: grid;
     grid-template-columns: 20% 60% 20%;
 
