@@ -30,8 +30,8 @@ const SocialIcons = ({ className }) => {
     <ul>
 
       {
-        socials.map((social) => (
-          <li>
+        socials.map((social, index) => (
+          <li key={`${social.name}-${index}`}>
             <a aria-label={social.name} target="_blank" rel="nofollow noopener noreferrer" href={social.url}>
               <FontAwesomeIcon icon={SOCIAL_ICON_MAP[social.name]} className={className} />
             </a>

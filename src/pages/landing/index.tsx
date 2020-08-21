@@ -15,14 +15,14 @@ const IndexPage = () => {
     query SiteMetadataQuery {
       site {
         siteMetadata {
-          headline
+          tagline
           description
         }
       }
     }
   `);
 
-  const { headline, description } = data.site.siteMetadata
+  const { tagline, description } = data.site.siteMetadata
 
   return (
     <Layout>
@@ -32,7 +32,7 @@ const IndexPage = () => {
           <div className="tagline-section">
             <p className="greeting">Hi,</p>
             <h1 className="heading">I'm <span>Reico</span> Lee.</h1>
-            <h2 className="tagline">{headline}</h2>
+            <h2 className="tagline">{tagline}</h2>
             <p className="description">{description}</p>
             <p className="companies">Currently <a className="companyLink" target="_blank" rel="nofollow noopener noreferrer" href="https://withdouble.com">@Double</a>.
             Formerly <a className="companyLink" target="_blank" rel="nofollow noopener noreferrer" href="https://getbento.com/">@BentoBox</a>.</p>
