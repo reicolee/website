@@ -1,32 +1,43 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
+const SOCIAL_ICON_MAP = {
+  'Github': faGithub,
+  'Instagram': faInstagram,
+  'Contact Reico by email': faEnvelope,
+  'LinkedIn': faLinkedinIn
+}
 
 const SocialIcons = ({ className }) => {
+  const data = useStaticQuery(graphql`
+    query SocialMetadataQuery {
+      site {
+        siteMetadata {
+          socials{
+            name
+            url
+          }
+        }
+      }
+    }
+  `);
+
+  const { socials } = data.site.siteMetadata
   return (
     <ul>
-      <li>
-        <a aria-label="Reico's LinkedIn" target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/reicolee/">
-          <FontAwesomeIcon icon={faLinkedinIn} className={className} />
-        </a>
-      </li>
-      <li>
-        <a aria-label="Reico's GitHub" target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/reicolee">
-          <FontAwesomeIcon icon={faGithub} className={className} />
-        </a>
-      </li>
-      <li>
-        <a aria-label="Contact Reico by email" href="mailto:leereico@gmail.com?subject=Hi Reico!">
-          <FontAwesomeIcon icon={faEnvelope} className={className} />
-        </a>
-      </li>
-      <li>
-        <a aria-label="Instagram" target="_blank" rel="nofollow noopener noreferrer" href="https://www.instagram.com/reicolee/?hl=en">
-          <FontAwesomeIcon icon={faInstagram} className={className} />
-        </a>
-      </li>
+
+      {
+        socials.map((social) => (
+          <li>
+            <a aria-label={social.name} target="_blank" rel="nofollow noopener noreferrer" href={social.url}>
+              <FontAwesomeIcon icon={SOCIAL_ICON_MAP[social.name]} className={className} />
+            </a>
+          </li>
+        ))
+      }
     </ul>
   )
 }

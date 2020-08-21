@@ -4,6 +4,24 @@ module.exports = {
     description: "I'm a full stack software engineer based in NYC, specializing in building \
     web applications using technologies such as NodeJS, React, Redux, GraphQL, Django, etc.",
     headline: `I build things on the web, and I love what I do.`,
+    socials: [
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/reicolee/'
+      },
+      {
+        name: 'Github',
+        url: 'https://github.com/reicolee'
+      },
+      {
+        name: 'Contact Reico by email',
+        url: 'mailto:leereico@gmail.com?subject=Hi Reico!'
+      },
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/reicolee/?hl=en'
+      }
+    ],
     author: `@Reico`,
   },
   plugins: [
