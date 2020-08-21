@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Reico Lee - Software Engineer`,
-    description: `Reico's portfolio website.`,
+    description: "I'm a full stack software engineer based in NYC, specializing in building \
+    web applications using technologies such as NodeJS, React, Redux, GraphQL, Django, etc.",
+    headline: `I build things on the web, and I love what I do.`,
     author: `@Reico`,
   },
   plugins: [
