@@ -183,7 +183,7 @@ section {
   &.about {
     margin: 150px auto 150px auto;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 15% 70% 15%;
 
     @include media("<=phone") {
       grid-template-columns: 100%;
