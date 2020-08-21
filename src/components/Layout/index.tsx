@@ -36,15 +36,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-// import { useStaticQuery, graphql } from "gatsby"
-// const data = useStaticQuery(graphql`
-//   query SiteTitleQuery {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `)
-//   siteTitle={data.site.siteMetadata.title} 

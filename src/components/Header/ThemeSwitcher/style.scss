@@ -9,7 +9,7 @@
   width: 200px;
   right: 2.5rem;
   top: 2rem;
-  color: $darkColor;
+  color: $dark6Color;
 
   @include media("<=desktop") {
     right: 0.5rem;
@@ -23,7 +23,7 @@
   }
 
   &.dark {
-    color: $lightColor;
+    color: $light6Color;
   }
 }
 input {
@@ -64,7 +64,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 0.0625rem $lightColor;
+  box-shadow: 0 0 0.0625rem $light6Color;
 }
 
 input:checked + .slider:before {
@@ -108,10 +108,10 @@ input:checked + .slider:before {
   }
   
   .mobileSwitcherIcon {
-    color: $darkColor;
+    color: $dark6Color;
     font-size: 20px;
     .dark & {
-      color: $lightColor;
+      color: $light6Color;
     }
   }
 }

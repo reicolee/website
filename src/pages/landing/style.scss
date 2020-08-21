@@ -58,7 +58,8 @@ section {
           }
 
           .heading {
-            font-size: 64px;
+            font-size: calc(20px + 3.7vw);
+            // font-size: 64px;
             line-height: 130%;
             span {
               color: $lightSpecialColor;
@@ -75,7 +76,8 @@ section {
           }
         
           .tagline {
-            font-size: 32px;
+            font-size: calc(20px + 1.3vw);
+            // font-size: 32px;
             line-height: 130%;
 
 
@@ -179,6 +181,63 @@ section {
   }
 
   &.about {
+    margin: 240px auto 0 auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
 
+    @include media("<=phone") {
+      grid-template-columns: 100%;
+      margin-top: 50%;
+    }
+
+    .content {
+      grid-column: 2 / 2;
+
+      @include media("<=phone") {
+        grid-column: 1;
+      }
+
+      .header {
+        color: $lightSpecialColor;
+        font-size: 100px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        text-align: left;
+        z-index: 10;
+        position: relative;
+        line-height: 0.6em;
+        pointer-events: none;
+        flex: 1 100%;
+
+        @include media("<=phone") {
+          font-size: 15vw;
+        }
+
+        .dark & {
+          color: $darkSpecialColor;
+        }
+      }
+
+      .text {
+        background-color: $light5Color;
+        padding: 30px 50px 60px;
+        font-size: 16px;
+        line-height: 160%;
+
+        
+        .dark & {
+          background-color: $dark5Color;
+        }
+        
+        @include media("<=phone") {
+          padding: 10%;
+        }
+
+        p {
+          margin: 20px auto 0.65em;
+        }
+
+      }
+    }
   }
 }

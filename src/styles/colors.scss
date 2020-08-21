@@ -1,6 +1,10 @@
-$lightColor: white;
-$darkColor: #0B1726;
-$darkBackground: $darkColor;
+$light6Color: white;
+$light5Color: #F2F2F2;
+
+$dark6Color: #0B1726;
+$dark5Color: #172B45;
+
+$darkBackground: $dark6Color;
 
 $darkSpecialColor: #F2CB05;
 $lightSpecialColor: #A62648;
@@ -11,10 +15,10 @@ $hoverDarkBackgroundColor: $darkSpecialColor;
 
 @mixin theme-main-colors($light-theme: true) {
   @if $light-theme {
-    color: $darkColor;
+    color: $dark6Color;
   } @else {
-    background-color: $darkColor;
-    color: $lightColor;
+    background-color: $dark6Color;
+    color: $light6Color;
   }
 }
 
