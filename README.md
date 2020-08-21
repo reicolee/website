@@ -1,3 +1,3 @@
 # 👋 Reico's website v2 
 
-### Built using Gatsby with React
+### Built using Gatsby with React and TypeScript
