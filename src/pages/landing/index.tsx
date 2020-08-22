@@ -33,7 +33,7 @@ const IndexPage = () => {
             <p className="greeting">Hi,</p>
             <h1 className="heading">I'm <span>Reico</span> Lee.</h1>
             <h2 className="tagline">{tagline}</h2>
-            <p className="companies">Currently <a className="companyLink" target="_blank" rel="nofollow noopener noreferrer" href="https://withdouble.com">@Double</a>.
+            <p className="companies">Software Engineer <a className="companyLink" target="_blank" rel="nofollow noopener noreferrer" href="https://withdouble.com">@Double</a>.
             Formerly <a className="companyLink" target="_blank" rel="nofollow noopener noreferrer" href="https://getbento.com/">@BentoBox</a>.</p>
             <a className="resumeBtn" aria-label="Reico's Resume" target="_blank" rel="nofollow noopener noreferrer" href={'../../reico-resume.pdf'}>
               View resumé
