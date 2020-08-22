@@ -173,6 +173,9 @@ section {
     padding: 40px 50px 60px;
     font-size: 16px;
     line-height: 160%;
+    @include media("<=phone") {
+      padding: 10%;
+    }
 
     .box-header {
       font-size: 46px;
@@ -187,6 +190,11 @@ section {
       max-width: 680px;
       z-index: 10;
       letter-spacing: -0.03em;
+
+      @include media("<=phone") {
+        font-size: 32px;
+        margin-top: 30px;
+      }
     }
   }
 
@@ -196,8 +204,8 @@ section {
     grid-template-columns: 15% 70% 15%;
 
     @include media("<=phone") {
+      margin: 100px auto;
       grid-template-columns: 100%;
-      margin-top: 50%;
     }
 
     .content {
@@ -207,6 +215,7 @@ section {
 
       @include media("<=phone") {
         grid-column: 1;
+        grid-template-columns: 100%;
       }
 
       .header {
@@ -225,6 +234,7 @@ section {
 
         @include media("<=phone") {
           font-size: 13vw;
+          grid-column: 1;
         }
 
         .dark & {
@@ -246,6 +256,7 @@ section {
         
         @include media("<=phone") {
           padding: 10%;
+          grid-column: 1;
         }
 
         p {
