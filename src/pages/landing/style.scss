@@ -46,7 +46,8 @@ section {
           }
 
           @include media("<=phone") {
-            margin-top: 0.5rem;
+            margin-top: 3rem;
+            margin-left: 1.8rem;
           }
 
           .greeting {
