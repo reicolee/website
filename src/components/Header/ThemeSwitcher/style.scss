@@ -9,7 +9,7 @@
   width: 200px;
   right: 2.5rem;
   top: 2rem;
-  color: $dark6Color;
+  color: $lightFont6Color;
 
   @include media("<=desktop") {
     right: 0.5rem;
@@ -23,7 +23,7 @@
   }
 
   &.dark {
-    color: $light6Color;
+    color: $darkFont6Color;
   }
 }
 input {
@@ -108,10 +108,10 @@ input:checked + .slider:before {
   }
   
   .mobileSwitcherIcon {
-    color: $dark6Color;
+    color: $darkFont6Color;
     font-size: 20px;
     .dark & {
-      color: $light6Color;
+      color: $lightFont6Color;
     }
   }
 }
