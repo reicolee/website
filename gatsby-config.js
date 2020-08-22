@@ -1,9 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Reico Lee - Software Engineer`,
-    description: "I'm a full stack software engineer based in NYC, specializing in building \
-    web applications using technologies such as NodeJS, React, Redux, GraphQL, Django, etc.",
-    tagline: `I build things on the web, and I love what I do.`,
+    title: 'Reico Lee - Software Engineer',
+    description: "I’m a full stack software engineer based in NYC. I love solving hard problems. \
+    No matter how big or small the task is, you will find me meticulously looking for the \
+    right solution that fits the context. Humility, resourcefulness, and open-mindedness are \
+    core to how I approach my work, and the people around me. My ultimate goal is to translate \
+    my passion in software development to perpetually work on improving my chops, and build \
+    creative solutions that empower the lives I touch.",
+    tagline: 'I build things on the web, and I love what I do.',
     socials: [
       {
         name: 'LinkedIn',
