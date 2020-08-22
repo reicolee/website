@@ -4,7 +4,7 @@ module.exports = {
     description: "I’m a full stack software engineer based in NYC. I love solving hard problems. \
     No matter how big or small the task is, you will find me meticulously looking for the \
     right solution that fits the context. Humility, resourcefulness, and open-mindedness are \
-    core to how I approach my work, and the people around me. My ultimate goal is to translate \
+    core to how I approach my work, and people around me. My ultimate goal is to translate \
     my passion in software development to perpetually work on improving my chops, and build \
     creative solutions that empower the lives I touch.",
     tagline: 'I build things on the web, and I love what I do.',
