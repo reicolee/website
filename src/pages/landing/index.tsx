@@ -47,16 +47,16 @@ const IndexPage = () => {
       </section>
       <section className="about">
         <div className="content">
-          <h2 className="header">About me.</h2>
+          <h2 className="header">About</h2>
           <div className="box description">
             <p>{description}</p>
           </div>
           <div className="box background">
-            <h3 className="box-header">Facts.</h3>
+            <h3 className="box-header">Facts</h3>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
           <div className="box skills">
-          <h3 className="box-header">Skills.</h3>
+          <h3 className="box-header">Skills</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
         </div>
