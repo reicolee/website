@@ -52,18 +52,26 @@ const IndexPage = () => {
             <p>{description}</p>
           </div>
           <div className="box section__col1">
-            <h3 className="box-header">Facts</h3>
+            <h3 className="box-header">Facts.</h3>
             <ul>
-              <li>Born in the 6ix 🇨🇦, raised in +852 🇭🇰.</li>
-              <li>Trilingual.</li>
-              <li>Graudated from UBC Commerce, marketing.</li>
-              <li>Walking my cats 🐈.</li>
-              <li>Playing FIFA Ultimate Team 🎮.</li>
+              <li>Born in the 6ix 🇨🇦</li>
+              <li>Raised in +852 🇭🇰</li>
+              <li>Trilingual</li>
+              <li>Graudated from UBC Commerce, marketing</li>
+              <li>Walking my cats 🐈</li>
+              <li>FIFA Ultimate Team 🎮</li>
             </ul>
           </div>
           <div className="box section__col2">
-            <h3 className="box-header">Skills</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h3 className="box-header">Proficiency.</h3>
+            <ul>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React, React Native</li>
+              <li>Redux</li>
+              <li>GraphQL</li>
+            </ul>
           </div>
         </div>
       </section>

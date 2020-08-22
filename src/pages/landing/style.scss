@@ -80,7 +80,7 @@ section {
           .tagline {
             font-size: calc(10px + 2vw);
             line-height: 130%;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.03em;
             @include media("<=phone") {
               font-size: 20px;
             }
