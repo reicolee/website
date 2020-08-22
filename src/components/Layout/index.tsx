@@ -17,12 +17,7 @@ const Layout = ({ children }) => {
         setDark={() => setDark(!isDark)}
         isDark={isDark}
         />
-      <div
-        style={{
-          margin: `0 50px 100px 50px`,
-          maxWidth: `100%`,
-        }}
-        >
+      <div className="contentOuter">
         <LeftMinSidebar />
         <main id="content">{children}</main>
       </div>

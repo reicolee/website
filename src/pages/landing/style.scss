@@ -206,7 +206,7 @@ section {
     flex: 1 100%;
 
     @include media("<=phone") {
-      font-size: 13vw;
+      font-size: 17vw;
       grid-column: 1;
     }
 
@@ -220,7 +220,6 @@ section {
     grid-row: 2;
     background-color: $light5Color;
     color: $lightFont5Color;
-    font-size: 16px;
     line-height: 160%;
 
     
@@ -264,7 +263,8 @@ section {
     font-size: 16px;
     line-height: 160%;
     @include media("<=phone") {
-      padding: 10%;
+      padding: 9%;
+      font-size: 14px;
     }
 
     .box-header {
