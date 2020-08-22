@@ -295,4 +295,14 @@ section {
       }
     }
   }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    li {
+      margin: 0.7rem 0;
+    }
+  }
+
 }

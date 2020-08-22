@@ -63,14 +63,16 @@ const IndexPage = () => {
             </ul>
           </div>
           <div className="box section__col2">
-            <h3 className="box-header">Proficiency.</h3>
-            <ul>
+            <h3 className="box-header">Proficiencies.</h3>
+            <ul className="skills-list">
               <li>JavaScript (ES6+)</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>React, React Native</li>
+              <li>HTML & CSS (w/ Sass)</li>
+              <li>Node.js</li>
+              <li>React + React Native</li>
               <li>Redux</li>
               <li>GraphQL</li>
+              <li>Python 3</li>
+              <li>Django (w/ DRF)</li>
             </ul>
           </div>
         </div>
