@@ -45,19 +45,28 @@ const IndexPage = () => {
           <img src={portrait} className="portrait" alt="Reico's portrait"/>
         </div>
       </section>
-      <section className="about">
-        <div className="content">
-          <h2 className="header">About</h2>
-          <div className="box description">
+      <section className="section">
+        <div className="section__content">
+          <h2 className="section__header">About.</h2>
+          <div className="box section__description">
             <p>{description}</p>
           </div>
-          <div className="box background">
+          <div className="box section__col1">
             <h3 className="box-header">Facts</h3>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
-          <div className="box skills">
-          <h3 className="box-header">Skills</h3>
+          <div className="box section__col2">
+            <h3 className="box-header">Skills</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section__content">
+          <h2 className="section__header">Work.</h2>
+          <div className="box section__description">
+            <p>{description}</p>
           </div>
         </div>
       </section>

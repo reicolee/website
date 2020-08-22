@@ -168,6 +168,90 @@ section {
     }
 
   }
+}
+
+.section {
+  margin: 150px 0px;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+
+  @include media("<=phone") {
+    margin: 100px auto;
+    grid-template-columns: 100%;
+  }
+
+  &__content {
+    grid-column: 2 / 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @include media("<=phone") {
+      grid-column: 1;
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    color: $lightSpecialColor;
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex: 1 100%;
+
+    @include media("<=phone") {
+      font-size: 13vw;
+      grid-column: 1;
+    }
+
+    .dark & {
+      color: $darkSpecialColor;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background-color: $light5Color;
+    font-size: 16px;
+    line-height: 160%;
+
+    
+    .dark & {
+      background-color: $dark5Color;
+    }
+    
+    @include media("<=phone") {
+      padding: 10%;
+      grid-column: 1;
+    }
+
+    p {
+      margin: 20px auto 0.65em;
+    }
+
+  }
+
+
+  &__col1 {
+    background-color: #D7D9D9;
+    .dark & {
+      background-color: #1E3259;
+    }
+  }
+  &__col2 {
+    background-color: #BFBFBF;
+    .dark & {
+      background-color: #2E4159;
+    }
+  }
+
 
   .box {
     padding: 40px 50px 60px;
@@ -194,89 +278,6 @@ section {
       @include media("<=phone") {
         font-size: 32px;
         margin-top: 30px;
-      }
-    }
-  }
-
-  &.about {
-    margin: 150px auto 150px auto;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-
-    @include media("<=phone") {
-      margin: 100px auto;
-      grid-template-columns: 100%;
-    }
-
-    .content {
-      grid-column: 2 / 2;
-      display: grid;
-      grid-template-columns: 50% 50%;
-
-      @include media("<=phone") {
-        grid-column: 1;
-        grid-template-columns: 100%;
-      }
-
-      .header {
-        grid-column: 1 / 3;
-        grid-row: 1;
-        color: $lightSpecialColor;
-        font-size: 110px;
-        font-weight: 800;
-        letter-spacing: -0.02em;
-        text-align: left;
-        z-index: 10;
-        position: relative;
-        line-height: 0.6em;
-        pointer-events: none;
-        flex: 1 100%;
-
-        @include media("<=phone") {
-          font-size: 13vw;
-          grid-column: 1;
-        }
-
-        .dark & {
-          color: $darkSpecialColor;
-        }
-      }
-
-      .description {
-        grid-column: 1 / 3;
-        grid-row: 2;
-        background-color: $light5Color;
-        font-size: 16px;
-        line-height: 160%;
-
-        
-        .dark & {
-          background-color: $dark5Color;
-        }
-        
-        @include media("<=phone") {
-          padding: 10%;
-          grid-column: 1;
-        }
-
-        p {
-          margin: 20px auto 0.65em;
-        }
-
-      }
-
-
-      .background {
-        background-color: #D7D9D9;
-        .dark & {
-          background-color: #1E3259;
-        }
-      }
-      .skills {
-        background-color: #BFBFBF;
-        .dark & {
-          background-color: #2E4159;
-        }
       }
     }
   }
