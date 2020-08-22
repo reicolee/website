@@ -292,6 +292,10 @@ section {
       li {
         list-style: none;
         margin: 1.2rem 0;
+
+        @include media('<=phone'){
+          margin: 1rem 0;
+        }
       }
     }
   }
@@ -300,8 +304,8 @@ section {
     display: grid;
     grid-template-columns: 50% 50%;
 
-    li {
-      margin: 0.7rem 0;
+    @include media("<=phone") {
+      grid-template-columns: 100%;
     }
   }
 

@@ -73,6 +73,7 @@ const IndexPage = () => {
               <li>GraphQL</li>
               <li>Python 3</li>
               <li>Django (w/ DRF)</li>
+              <li>Web accessibility</li>
             </ul>
           </div>
         </div>
