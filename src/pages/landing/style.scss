@@ -323,25 +323,25 @@ section {
     font-weight: bold;
     position: relative;
 
-    background-color: white;
-    color: #644BFF;
+    background-color: $light2Color;
+    color: $lightFont2Color;
 
     .dark & {
-      background-color: #6096ba;
-      color: white;
+      background-color: $dark2Color;
+      color: $darkFont2Color;
     }
 
     rect {
-      fill: white;
+      fill: $light2Color;
       .dark & {
-        fill: #6096ba
+        fill: $dark2Color
       }
     }
 
     path {
-      fill: #644BFF;
+      fill: $lightFont2Color;
       .dark & {
-        fill: white;
+        fill: $darkFont2Color;
       }
     }
 
@@ -353,21 +353,21 @@ section {
   &__item2 {
     grid-column: 1 / 2;
     grid-row: 3;
-    background-color: #f2f2f2;
-    color:#ef626c;
+    background-color: $light1Color;
+    color:$lightFont1Color;
 
     .dark & {
-      background-color: #D8E4EA;
-      color: $dark2Color;
+      background-color: $dark1Color;
+      color: $darkFont1Color;
     }
 
     svg {
       height: 40px;
       width: 40px;
       path {
-        fill: #ef626c;
+        fill: $lightFont1Color;
         .dark & {
-          fill: $dark2Color;
+          fill: $darkFont1Color;
         }
       }
     }
@@ -386,15 +386,15 @@ section {
   &__item3 {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
-    background-color: $light2Color;
-    color: $lightFont2Color;
+    background-color: $light0Color;
+    color: $lightFont0Color;
     display: grid;
     text-align: center;
     justify-items: center;
     align-content: center;
     .dark & {
-      background-color: $dark2Color;
-      color: $darkFont2Color;
+      background-color: $dark0Color;
+      color: $darkFont0Color;
     }
 
     @include media("<=1500px") {
@@ -410,7 +410,7 @@ section {
       display: block;
       cursor: pointer;
       color: inherit;
-      text-decoration: none;
+      text-decoration: underline;
       margin-top: 20%;
       font-size: 28px;
       font-weight: bold;
@@ -418,7 +418,11 @@ section {
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
       &:hover {
-        text-decoration: underline;
+        color: $lightSpecialColor;
+
+        .dark & {
+          color: $darkSpecialColor;
+        }
       }
     }
   }

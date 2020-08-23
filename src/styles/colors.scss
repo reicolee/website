@@ -11,10 +11,16 @@ $light4Color: darken(#97BEC8, 6%);
 $lightFont4Color: white;
 
 $light3Color: #eff6e0;
-$lightFont3Color: #086375;
+$lightFont3Color: darken(#97BEC8, 35%);;
 
-$light2Color: #CADBDA;
-$lightFont2Color: #1f2041;
+$light2Color: #89B0BC;
+$lightFont2Color: white;
+
+$light1Color: #EFF2EC;
+$lightFont1Color:#4E4E4E;
+
+$light0Color: #D6EDE8;
+$lightFont0Color: #4E4E4E;
 
 
 $lightSpecialColor: #A62648;
@@ -34,8 +40,14 @@ $darkFont4Color: white;
 $dark3Color: #bbdef0;
 $darkFont3Color: #133c55;
 
-$dark2Color: #495867;
+$dark2Color: #6096ba;
 $darkFont2Color: white;
+
+$dark1Color: #D8E4EA;
+$darkFont1Color:#495867;
+
+$dark0Color: #495867;
+$darkFont0Color: white;
 
 $darkSpecialColor: #F2CB05;
 $darkSectionHeaderColor: $darkSpecialColor;
