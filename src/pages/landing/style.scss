@@ -292,6 +292,11 @@ section {
       grid-column: 2;
       grid-template-columns: 100%;
     }
+
+    @include media("<=tablet") {
+      grid-column: 1;
+      grid-template-columns: 100%;
+    }
   }
 
   &__header {
@@ -340,7 +345,7 @@ section {
       }
     }
 
-    @include media(">tablet", "<=1024px") {
+    @include media("<=1024px") {
       grid-column: 1;
       grid-row: 2;
     }
@@ -372,7 +377,7 @@ section {
       width: 40px;
     }
 
-    @include media(">tablet", "<=1024px") {
+    @include media("<=1024px") {
       grid-column: 1;
       grid-row: 3;
     }
@@ -391,7 +396,12 @@ section {
       background-color: $dark2Color;
       color: $darkFont2Color;
     }
-    @include media(">tablet", "<=1024px") {
+
+    @include media("<=1500px") {
+      padding: 10px !important;
+    }
+
+    @include media("<=1024px") {
       grid-column: 1;
       grid-row: 4;
     }
