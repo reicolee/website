@@ -315,11 +315,12 @@ section {
   &__item1 {
     grid-column: 1 / 2;
     grid-row: 2;
-    background-color: $light5Color;
+    background-color: #ffcad4;
     color: $lightFont5Color;
+    font-weight: bold;
     position: relative;
-    background: linear-gradient(to right, rgba(255, 255, 255,0.6),rgba(255, 255, 255,0.6)), url('../../images/mission.png');
-    background-size: cover;
+    background: linear-gradient(to right, rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.8)), url('../../images/mission.png');
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -327,9 +328,14 @@ section {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+
     .dark & {
       background-color: $dark5Color;
       color: $darkFont3Color;
+    }
+    @include media("<=phone") {
+      grid-column: 1;
+      grid-row: 2;
     }
   }
   &__item2 {
@@ -342,6 +348,16 @@ section {
       background-color: $dark4Color;
       color: $darkFont4Color;
     }
+
+    .bentoLogo {
+      height: 40px;
+      width: 40px;
+    }
+
+    @include media("<=phone") {
+      grid-column: 1;
+      grid-row: 3;
+    }
   }
 
   &__item3 {
@@ -349,9 +365,17 @@ section {
     grid-row: 2 / 4;
     background-color: $light3Color;
     color: $lightFont3Color;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
     .dark & {
       background-color: $dark3Color;
       color: $darkFont3Color;
+    }
+    @include media("<=phone") {
+      grid-column: 1;
+      grid-row: 4;
     }
 
     a {
@@ -406,7 +430,7 @@ section {
   .box-header {
     font-size: 46px;
     line-height: 1.3em;
-    margin: 60px auto 0.65em;
+    margin: 60px auto 0.7em;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: translateZ(0);
     font-weight: 800;
@@ -433,5 +457,10 @@ section {
         margin: 0.5rem 0;
       }
     }
+  }
+
+  p {
+    margin: 2rem 2rem;
+    text-align: center;
   }
 }
