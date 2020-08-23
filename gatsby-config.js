@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Reico Lee - Software Engineer',
-    metaDescription: 'I’m a full stack software engineer based in NYC, specialized in web development with TypeScript, React, Node.js, Django, and more.',
+    title: 'Reico Lee | Software Engineer',
+    metaDescription: 'Hi, I’m Reico Lee, a full stack software engineer based in NYC, specializing in web development with TypeScript, React, Node.js, Django, and more.',
     description: "I’m a full stack software engineer based in NYC. I love solving hard problems. \
     No matter how big or small the task is, you will find me meticulously looking for the \
     right solution that fits the context. Humility, resourcefulness, and open-mindedness are \
@@ -27,6 +27,10 @@ module.exports = {
         url: 'https://www.instagram.com/reicolee/?hl=en'
       }
     ],
+    metaKeywords: 
+    'Reico Lee, Reico, Lee, reicolee, software engineer, front-end engineer, full stack engineer, \
+    full-stack engineer, NYC, web developer, web development, full stack developer, \
+    full-stack engineer, full-stack developer, @reicolee, leereico@gmail.com',
     author: '© 2020, Handcrafted by Reico Lee',
     websiteRepoUrl: 'https://github.com/reicolee/website',
     siteUrl: 'https://reicolee.com/'
