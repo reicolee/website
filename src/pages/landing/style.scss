@@ -181,7 +181,7 @@ section {
   }
 
   @include media("<=phone") {
-    margin: 100px auto;
+    margin: 80px auto;
     grid-template-columns: 100%;
   }
 
@@ -215,7 +215,7 @@ section {
     }
 
     @include media("<=phone") {
-      font-size: 17vw;
+      font-size: 21vw;
       grid-column: 1;
     }
 
@@ -303,7 +303,7 @@ section {
         margin: 1.2rem 0;
 
         @include media('<=phone'){
-          margin: 1rem 0;
+          margin: 0.5rem 0;
         }
       }
     }
