@@ -406,6 +406,10 @@ section {
       grid-row: 4;
     }
 
+    @include media("<=phone") {
+      padding: 50px !important;
+    }
+
     a {
       display: block;
       cursor: pointer;
@@ -416,6 +420,11 @@ section {
       font-weight: bold;
       width: 200px;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+      @include media("<=phone") {
+        margin-top: 5%;
+        margin-bottom: 20%;
+      }
 
       &:hover {
         color: $lightSpecialColor;
