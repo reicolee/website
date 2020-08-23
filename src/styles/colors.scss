@@ -1,22 +1,58 @@
-$lightColor: white;
-$darkColor: #0B1726;
-$darkBackground: $darkColor;
+
+
+// light mode
+$light6Color: white;
+$lightFont6Color: black;
+
+$light5Color: #CADBDA;
+$lightFont5Color: #1f2041;
+
+$light4Color: darken(#97BEC8, 6%);
+$lightFont4Color: white;
+
+$light3Color: #eff6e0;
+$lightFont3Color: #086375;
+
+
+$lightSpecialColor: #A62648;
+$lightSectionHeaderColor: $lightSpecialColor;
+
+
+// dark mode 
+$dark6Color: #0B1726;
+$darkFont6Color: white;
+
+$dark5Color: #577590;
+$darkFont5Color: white;
+
+$dark4Color: #22577a;
+$darkFont4Color: white;
+
+$dark3Color: #bbdef0;
+$darkFont3Color: #133c55;
 
 $darkSpecialColor: #F2CB05;
-$lightSpecialColor: #A62648;
+$darkSectionHeaderColor: $darkSpecialColor;
+
+
+
+@mixin theme-main-colors($light-theme: true) {
+
+  font-weight: 600;
+  @if $light-theme {
+    background-color: $light6Color;
+    color: $lightFont6Color;
+  } @else {
+    background-color: $dark6Color;
+    color: $darkFont6Color;
+  }
+}
+
 
 $hoverLightBackground: $lightSpecialColor;
 $hoverDarkBackgroundColor: $darkSpecialColor;
 
 
-@mixin theme-main-colors($light-theme: true) {
-  @if $light-theme {
-    color: $darkColor;
-  } @else {
-    background-color: $darkColor;
-    color: $lightColor;
-  }
-}
 
 
 @mixin hover-colors($light-theme: true) {

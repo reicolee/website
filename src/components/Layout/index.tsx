@@ -17,12 +17,7 @@ const Layout = ({ children }) => {
         setDark={() => setDark(!isDark)}
         isDark={isDark}
         />
-      <div
-        style={{
-          margin: `0 50px 100px 50px`,
-          maxWidth: `100%`,
-        }}
-        >
+      <div className="contentOuter">
         <LeftMinSidebar />
         <main id="content">{children}</main>
       </div>
@@ -36,15 +31,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-// import { useStaticQuery, graphql } from "gatsby"
-// const data = useStaticQuery(graphql`
-//   query SiteTitleQuery {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `)
-//   siteTitle={data.site.siteMetadata.title} 

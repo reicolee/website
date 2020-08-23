@@ -1,16 +1,36 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import SocialIcons from '../SocialIcons'
 
 import './style.scss'
 
-const Footer = () => (
-  <footer>
-    <div className="footer-social-icons">
-      <SocialIcons className="footer-social-icon" />
-    </div>
-  </footer>
-)
+const Footer = () => {
+  const { site: { siteMetadata: { author, websiteRepoUrl } } } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            author
+            websiteRepoUrl
+          }
+        }
+      }
+    `
+  )
+
+  return (
+    <footer>
+      <div className="footer-social-icons">
+        <SocialIcons className="footer-social-icon" />
+      </div>
+      <div className="author">
+        <a target="_blank" rel="nofollow noopener noreferrer" href={websiteRepoUrl}>{author}</a>
+      </div>
+    </footer>
+  )
+}
+
 
 
 export default Footer
