@@ -55,7 +55,7 @@ main {
   display: grid;
   margin: 0 50px;
 
-  @include media("<=phone") {
+  @include media("<=tablet") {
     margin: 0;
   }
 }

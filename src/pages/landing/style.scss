@@ -176,6 +176,10 @@ section {
   display: grid;
   grid-template-columns: 15% 70% 15%;
 
+  @include media("<=tablet") {
+    grid-template-columns: 100%;
+  }
+
   @include media("<=phone") {
     margin: 100px auto;
     grid-template-columns: 100%;
@@ -186,7 +190,7 @@ section {
     display: grid;
     grid-template-columns: 50% 50%;
 
-    @include media("<=phone") {
+    @include media("<=tablet") {
       grid-column: 1;
       grid-template-columns: 100%;
     }
@@ -205,6 +209,10 @@ section {
     line-height: 0.6em;
     pointer-events: none;
     flex: 1 100%;
+
+    @include media("<=tablet") {
+      grid-column: 1;
+    }
 
     @include media("<=phone") {
       font-size: 17vw;
@@ -229,7 +237,7 @@ section {
       color: $darkFont5Color;
     }
     
-    @include media("<=phone") {
+    @include media("<=tablet") {
       padding: 10%;
       grid-column: 1;
     }
