@@ -71,7 +71,7 @@ const IndexPage = () => {
               <li>Born in the 6ix 🇨🇦</li>
               <li>Raised in +852 🇭🇰</li>
               <li>Trilingual</li>
-              <li>Graudated from UBC Commerce</li>
+              <li>Graduated from UBC Commerce</li>
               <li>Walking my cats daily 🐈</li>
               <li>FIFA Ultimate Team 🎮</li>
             </ul>

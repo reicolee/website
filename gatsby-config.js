@@ -7,7 +7,7 @@ module.exports = {
     right solution that fits the context. Humility, resourcefulness, and open-mindedness are \
     core to how I approach my work, and people around me. My ultimate goal is to translate \
     my passion in software development, perpetually work on improving my chops, and build \
-    great products that empower lives.",
+    great products that empower lives along the way.",
     tagline: 'I build things on the web, and I love what I do.',
     socials: [
       {
