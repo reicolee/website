@@ -78,7 +78,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
+{/* 
       <section className="section">
         <div className="section__content">
           <h2 className="section__header">Work.</h2>
@@ -86,7 +86,7 @@ const IndexPage = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }
