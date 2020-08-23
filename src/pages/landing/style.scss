@@ -288,8 +288,8 @@ section {
     display: grid;
     grid-template-columns: 70% 30%;
 
-    @include media("<=tablet") {
-      grid-column: 1;
+    @include media(">tablet", "<=1024px") {
+      grid-column: 2;
       grid-template-columns: 100%;
     }
   }
@@ -315,25 +315,32 @@ section {
   &__item1 {
     grid-column: 1 / 2;
     grid-row: 2;
-    background-color: #ffcad4;
-    color: $lightFont5Color;
     font-weight: bold;
     position: relative;
-    background: linear-gradient(to right, rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.8)), url('../../images/mission.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+
+    background-color: white;
+    color: #644BFF;
 
     .dark & {
-      background-color: $dark5Color;
-      color: $darkFont3Color;
+      background-color: #767b91;
+      color: white;
     }
-    @include media("<=phone") {
+
+    rect {
+      fill: white;
+      .dark & {
+        fill: #767b91
+      }
+    }
+
+    path {
+      fill: #644BFF;
+      .dark & {
+        fill: white;
+      }
+    }
+
+    @include media(">tablet", "<=1024px") {
       grid-column: 1;
       grid-row: 2;
     }
@@ -341,12 +348,23 @@ section {
   &__item2 {
     grid-column: 1 / 2;
     grid-row: 3;
-    background-color: $light4Color;
-    color: $lightFont4Color;
+    background-color: #f2f2f2;
+    color:#ef626c;
 
     .dark & {
-      background-color: $dark4Color;
-      color: $darkFont4Color;
+      background-color: #ebf2fa;
+      color: #313638;
+    }
+
+    svg {
+      height: 40px;
+      width: 40px;
+      path {
+        fill: #ef626c;
+        .dark & {
+          fill: #313638;
+        }
+      }
     }
 
     .bentoLogo {
@@ -354,7 +372,7 @@ section {
       width: 40px;
     }
 
-    @include media("<=phone") {
+    @include media(">tablet", "<=1024px") {
       grid-column: 1;
       grid-row: 3;
     }
@@ -363,17 +381,17 @@ section {
   &__item3 {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
-    background-color: $light3Color;
-    color: $lightFont3Color;
+    background-color: $light2Color;
+    color: $lightFont2Color;
     display: grid;
     text-align: center;
     justify-items: center;
     align-content: center;
     .dark & {
-      background-color: $dark3Color;
-      color: $darkFont3Color;
+      background-color: $dark2Color;
+      color: $darkFont2Color;
     }
-    @include media("<=phone") {
+    @include media(">tablet", "<=1024px") {
       grid-column: 1;
       grid-row: 4;
     }
@@ -444,11 +462,15 @@ section {
     @include media("<=phone") {
       font-size: 32px;
       margin-top: 24px;
+      text-align: center;
     }
   }
 
   ul {
     display: grid;
+    @include media('<=phone'){
+      text-align: center;
+    }
     li {
       list-style: none;
       margin: 1.2rem 0;
@@ -459,7 +481,7 @@ section {
     }
   }
 
-  p {
+  .box-text-center {
     margin: 2rem 2rem;
     text-align: center;
   }

@@ -5,7 +5,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 import portrait from 'src/images/portrait.jpg'
 import DoubleLogo from 'src/svg/double_logo.svg'
-import bentoLogo from 'src/images/bentobox_logo.png'
+import BentoBoxLogo from 'src/svg/bentobox-logo.svg'
 
 import Layout from "src/components/Layout"
 import SEO from "src/components/SEO"
@@ -89,16 +89,16 @@ const IndexPage = () => {
           <div className="box work__section__item work__section__item1">
             <h3 className="box-header">Double</h3>
             <DoubleLogo />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
+            <p className="box-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
           </div>
           <div className="box work__section__item work__section__item2">
             <h3 className="box-header">BentoBox</h3>
-            <img src={bentoLogo} className="bentoLogo" alt="BentoBox's logo"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
+            <BentoBoxLogo />
+            <p className="box-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
           </div>
           <div className="box work__section__item3">
             <h3 className="box-header">What's next?</h3>
-            <p>Interested in working together? We should queue up a chat :)</p>
+            <p className="box-text-center">Interested in working together? We should queue up a chat :)</p>
             <a href='mailto:leereico@gmail.com?body=Hi Reico!'>Let's connect!</a>
           </div>
         </div>
