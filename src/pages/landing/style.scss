@@ -176,6 +176,10 @@ section {
   display: grid;
   grid-template-columns: 15% 70% 15%;
 
+  @include media(">tablet", "<=1024px") {
+    grid-template-columns: 3% 94% 3%;
+  }
+
   @include media("<=tablet") {
     grid-template-columns: 100%;
   }
