@@ -464,7 +464,7 @@ section {
   font-size: 16px;
   line-height: 160%;
   @include media("<=phone") {
-    padding: 9%;
+    padding: 12%;
     font-size: 14px;
   }
 
@@ -484,7 +484,8 @@ section {
 
     @include media("<=phone") {
       font-size: 32px;
-      margin-top: 24px;
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
       text-align: center;
     }
   }
@@ -505,7 +506,7 @@ section {
   }
 
   .box-text-center {
-    margin: 2rem 2rem;
+    margin: 3rem 2rem 2rem;
     text-align: center;
   }
 }
