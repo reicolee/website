@@ -63,6 +63,12 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-root-import`,
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-97549190-2",
+      },
+    },
   ],
 }
