@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Reico Lee - Software Engineer',
+    title: 'Reico Lee | Software Engineer',
     metaDescription: 'Hi, I’m Reico Lee, a full stack software engineer based in NYC, specializing in web development with TypeScript, React, Node.js, Django, and more.',
     description: "I’m a full stack software engineer based in NYC. I love solving hard problems. \
     No matter how big or small the task is, you will find me meticulously looking for the \
