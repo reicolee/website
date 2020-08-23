@@ -47,7 +47,7 @@ section {
 
           @include media("<=phone") {
             margin-top: 3rem;
-            margin-left: 1.8rem;
+            margin-left: 0.2em;
           }
 
           .greeting {
@@ -73,7 +73,7 @@ section {
 
 
             @include media("<=phone") {
-              font-size: 40px;
+              font-size: 52px;
             }
           }
         
