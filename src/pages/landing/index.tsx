@@ -52,17 +52,6 @@ const IndexPage = () => {
             <p>{description}</p>
           </div>
           <div className="box section__col1">
-            <h3 className="box-header">Facts.</h3>
-            <ul>
-              <li>Born in the 6ix 🇨🇦</li>
-              <li>Raised in +852 🇭🇰</li>
-              <li>Trilingual</li>
-              <li>Graudated from UBC Commerce</li>
-              <li>Walking my cats daily 🐈</li>
-              <li>FIFA Ultimate Team 🎮</li>
-            </ul>
-          </div>
-          <div className="box section__col2">
             <h3 className="box-header">Proficiencies.</h3>
             <ul className="skills-list">
               <li>JavaScript (ES6+)</li>
@@ -74,6 +63,17 @@ const IndexPage = () => {
               <li>Python 3</li>
               <li>Django (w/ DRF)</li>
               <li>Web accessibility</li>
+            </ul>
+          </div>
+          <div className="box section__col2">
+            <h3 className="box-header">Facts.</h3>
+            <ul>
+              <li>Born in the 6ix 🇨🇦</li>
+              <li>Raised in +852 🇭🇰</li>
+              <li>Trilingual</li>
+              <li>Graudated from UBC Commerce</li>
+              <li>Walking my cats daily 🐈</li>
+              <li>FIFA Ultimate Team 🎮</li>
             </ul>
           </div>
         </div>
