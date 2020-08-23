@@ -421,7 +421,7 @@ section {
       width: 200px;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
-      @include media("<=phone") {
+      @include media("<=1024px") {
         margin-top: 5%;
         margin-bottom: 20%;
       }
