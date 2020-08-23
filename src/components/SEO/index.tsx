@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             metaDescription
+            metaKeywords
             author
           }
         }
@@ -36,20 +37,24 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: `description`,
+          name: 'description',
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          name: 'keywords',
+          content: site.siteMetadata.metaKeywords,
+        },
+        {
+          property: 'og:title',
           content: title,
         },
         {
-          property: `og:description`,
+          property: 'og:description',
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: 'og:type',
+          content: 'website',
         },
         // {
         //   name: `twitter:card`,
