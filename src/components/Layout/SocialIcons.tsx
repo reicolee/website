@@ -30,7 +30,6 @@ const SocialIcons = ({ className }) => {
 
 
   const onLinkClicks = useCallback((event, label) => {
-    event.preventDefault()
     trackCustomEvent({
       category: 'Social Button',
       action: 'click',
