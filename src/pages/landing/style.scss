@@ -327,14 +327,14 @@ section {
     color: #644BFF;
 
     .dark & {
-      background-color: #767b91;
+      background-color: #6096ba;
       color: white;
     }
 
     rect {
       fill: white;
       .dark & {
-        fill: #767b91
+        fill: #6096ba
       }
     }
 
@@ -357,8 +357,8 @@ section {
     color:#ef626c;
 
     .dark & {
-      background-color: #ebf2fa;
-      color: #313638;
+      background-color: #D8E4EA;
+      color: $dark2Color;
     }
 
     svg {
@@ -367,7 +367,7 @@ section {
       path {
         fill: #ef626c;
         .dark & {
-          fill: #313638;
+          fill: $dark2Color;
         }
       }
     }
