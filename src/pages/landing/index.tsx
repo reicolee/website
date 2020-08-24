@@ -91,8 +91,9 @@ const IndexPage = () => {
             <span className="work__section__item__tenure">2019 - Present</span>
             <DoubleLogo />
             <p className="box-text-center">
-             Work closely with product, customer success, operations, and marketing to develop new tooling for
-             both executive and assistant to make delegation more accessible and seamless. 
+             I work closely with product, customer success, operations, and marketing to make 
+             delegation more accessible and seamless, developing better tooling on the web
+             to transform collaboration b/w executives and assistants.
             </p>
           </div>
           <div className="box work__section__item work__section__item2">
@@ -100,7 +101,7 @@ const IndexPage = () => {
             <span className="work__section__item__tenure">2017 - 2019</span>
             <BentoBoxLogo />
             <p className="box-text-center">
-              Worked on a wide array of projects ranging from frontend, backend, or full stack. 
+              I worked on a wide array of projects ranging from frontend, backend, or full stack. 
               Noteable projects include improved data pipeline and analytics, better accessibility on 5000+ websites, 
               streamlined company-wide productivity, CMS features development, and more.
             </p>
