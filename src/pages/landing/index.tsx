@@ -102,8 +102,8 @@ const IndexPage = () => {
             <BentoBoxLogo />
             <p className="box-text-center">
               I worked on a wide array of projects ranging from frontend, backend, or full stack. 
-              Noteable projects include improved data pipeline and analytics, better accessibility on 5000+ websites, 
-              streamlined company-wide productivity, CMS features development, and more.
+              Noteable projects include improved data pipeline and analytics, implemented core accessibility features on 5000+ websites, 
+              streamlined company-wide productivity with better tooling, core CMS features development, and more.
             </p>
           </div>
           <div className="box work__section__item3">
