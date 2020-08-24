@@ -98,7 +98,7 @@ const IndexPage = () => {
             <span className="work__section__item__tenure">2019 - Present</span>
             <DoubleLogo />
             <p className="box-text-center">
-             I work closely with product, customer success, operations, and marketing to make 
+             I work closely with product, design, customer success, operations, and marketing to make 
              delegation more accessible and seamless, developing better tooling on the web
              to transform collaboration b/w executives and assistants.
             </p>
