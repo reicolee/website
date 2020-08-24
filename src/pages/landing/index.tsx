@@ -90,13 +90,20 @@ const IndexPage = () => {
             <h3 className="box-header">Double</h3>
             <span className="work__section__item__tenure">2019 - Present</span>
             <DoubleLogo />
-            <p className="box-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
+            <p className="box-text-center">
+             Work closely with product, customer success, operations, and marketing to develop new tooling for
+             both executive and assistant to make delegation more accessible and seamless. 
+            </p>
           </div>
           <div className="box work__section__item work__section__item2">
             <h3 className="box-header">BentoBox</h3>
             <span className="work__section__item__tenure">2017 - 2019</span>
             <BentoBoxLogo />
-            <p className="box-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
+            <p className="box-text-center">
+              Worked on a wide array of projects ranging from frontend, backend, or full stack. 
+              Noteable projects include improved data pipeline and analytics, better accessibility on 5000+ websites, 
+              streamlined company-wide productivity, CMS features development, and more.
+            </p>
           </div>
           <div className="box work__section__item3">
             <h3 className="box-header">What's next?</h3>

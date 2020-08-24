@@ -520,5 +520,9 @@ section {
   .box-text-center {
     margin: 3rem 2rem 2rem;
     text-align: center;
+
+    @include media("<=phone") {
+      margin: 3rem 0 2rem;
+    }
   }
 }
