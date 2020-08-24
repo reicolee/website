@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'Reico Lee | Software Engineer',
     metaDescription: 'Hi, I’m Reico Lee, a full stack software engineer based in NYC, specializing in web development with TypeScript, React, Node.js, Django, and more.',
-    description: "I’m a full stack software engineer based in NYC. I love solving hard problems. \
+    description: "I’m a full stack software engineer based in NYC. I love building software and solving hard problems. \
     No matter how big or small the task is, you will find me meticulously looking for the \
     right solution that fits the context. Humility, resourcefulness, and open-mindedness are \
-    core to how I approach my work, and people around me. My ultimate goal is to translate \
+    core to how I approach my work, and the people around me. My ultimate goal is to translate \
     my passion into software development, perpetually work on improving my chops, and build \
-    great products that empower lives along the way.",
+    great products that empower lives.",
     tagline: 'I build things on the web, and I love what I do.',
     socials: [
       {
@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         name: 'Contact Reico by email',
-        url: 'mailto:leereico@gmail.com?subject=Hi Reico!'
+        url: 'mailto:leereico@gmail.com?body=Hi Reico!'
       },
       {
         name: 'Instagram',
@@ -70,5 +70,13 @@ module.exports = {
         trackingId: "UA-97549190-2",
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `${__dirname}/src/svg`
+        }
+      }
+    }
   ],
 }

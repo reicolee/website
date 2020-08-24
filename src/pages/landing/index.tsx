@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 import portrait from 'src/images/portrait.jpg'
+import DoubleLogo from 'src/svg/double_logo.svg'
+import BentoBoxLogo from 'src/svg/bentobox-logo.svg'
 
 import Layout from "src/components/Layout"
 import SEO from "src/components/SEO"
@@ -45,13 +47,13 @@ const IndexPage = () => {
           <img src={portrait} className="portrait" alt="Reico's portrait"/>
         </div>
       </section>
-      <section className="section">
-        <div className="section__content">
-          <h2 className="section__header">About.</h2>
-          <div className="box section__description">
+      <section className="about__section">
+        <div className="about__section__content">
+          <h2 className="about__section__header section-header">About.</h2>
+          <div className="box about__section__description">
             <p>{description}</p>
           </div>
-          <div className="box section__col1">
+          <div className="box about__section__col1">
             <h3 className="box-header">Proficiencies.</h3>
             <ul className="skills-list">
               <li>JavaScript (ES6+)</li>
@@ -59,19 +61,21 @@ const IndexPage = () => {
               <li>Node.js</li>
               <li>React + React Native</li>
               <li>Redux</li>
+              <li>Web accessibility</li>
               <li>GraphQL</li>
               <li>Python 3</li>
               <li>Django (w/ DRF)</li>
-              <li>Web accessibility</li>
+              <li>Netlify</li>
+              <li>AWS</li>
             </ul>
           </div>
-          <div className="box section__col2">
+          <div className="box about__section__col2">
             <h3 className="box-header">Facts.</h3>
             <ul>
               <li>Born in the 6ix 🇨🇦</li>
               <li>Raised in +852 🇭🇰</li>
               <li>Trilingual</li>
-              <li>Graduated from UBC Commerce</li>
+              <li>Graduated from UBC Sauder</li>
               <li>Walking my cats daily 🐈</li>
               <li>FIFA Ultimate Team 🎮</li>
             </ul>
@@ -79,14 +83,36 @@ const IndexPage = () => {
         </div>
       </section>
       {/* TODO */}
-      {/* <section className="section">
-        <div className="section__content">
-          <h2 className="section__header">Work.</h2>
-          <div className="box section__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section className="work__section">
+        <div className="work__section__content">
+          <h2 className="work__section__header section-header">Work.</h2>
+          <div className="box work__section__item work__section__item1">
+            <h3 className="box-header">Double</h3>
+            <span className="work__section__item__tenure">2019 - Present</span>
+            <DoubleLogo />
+            <p className="box-text-center">
+             I work closely with product, customer success, operations, and marketing to make 
+             delegation more accessible and seamless, developing better tooling on the web
+             to transform collaboration b/w executives and assistants.
+            </p>
+          </div>
+          <div className="box work__section__item work__section__item2">
+            <h3 className="box-header">BentoBox</h3>
+            <span className="work__section__item__tenure">2017 - 2019</span>
+            <BentoBoxLogo />
+            <p className="box-text-center">
+              I worked on a wide array of projects ranging from frontend, backend, or full stack. 
+              Noteable projects include improved data pipeline and analytics, better accessibility on 5000+ websites, 
+              streamlined company-wide productivity, CMS features development, and more.
+            </p>
+          </div>
+          <div className="box work__section__item3">
+            <h3 className="box-header">What's next?</h3>
+            <p className="box-text-center">Interested in working together? We should queue up a chat :)</p>
+            <a href='mailto:leereico@gmail.com?body=Hi Reico!'>Let's connect!</a>
           </div>
         </div>
-      </section> */}
+      </section>
     </Layout>
   )
 }
