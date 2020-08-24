@@ -315,6 +315,18 @@ section {
   &__item {
     display: grid;
     justify-items: center;
+
+    &.box {
+      .box-header {
+        margin-bottom: -0.1em;
+      }
+    }
+
+    &__tenure {
+      font-size: 14px;
+      margin-bottom: 2em;
+    }
+    
   }
 
   &__item1 {

@@ -88,11 +88,13 @@ const IndexPage = () => {
           <h2 className="work__section__header section-header">Work.</h2>
           <div className="box work__section__item work__section__item1">
             <h3 className="box-header">Double</h3>
+            <span className="work__section__item__tenure">2019 - Present</span>
             <DoubleLogo />
             <p className="box-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
           </div>
           <div className="box work__section__item work__section__item2">
             <h3 className="box-header">BentoBox</h3>
+            <span className="work__section__item__tenure">2017 - 2019</span>
             <BentoBoxLogo />
             <p className="box-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae pellentesque eros. Proin tristique dictum tempus. Nulla venenatis placerat risus, a fermentum neque auctor id. Sed lacinia lectus ultricies mi luctus pulvinar. </p>
           </div>
