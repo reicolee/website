@@ -51,7 +51,15 @@ const IndexPage = () => {
         <div className="about__section__content">
           <h2 className="about__section__header section-header">About.</h2>
           <div className="box about__section__description">
-            <p>{description}</p>
+            <p>
+              I’m a full stack software engineer based in NYC. I love building software and solving hard problems. 
+              No matter how big or small the task is, you will find me meticulously looking for the right solution that fits the context.
+            </p>
+            <p>
+              Humility, resourcefulness, and open-mindedness are core to how I approach my work, and the people around me.
+              My ultimate goal is to translate my passion into software development, perpetually work on improving my chops, and build
+              great products that empower lives.
+            </p>
           </div>
           <div className="box about__section__col1">
             <h3 className="box-header">Proficiencies.</h3>
