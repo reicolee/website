@@ -176,7 +176,7 @@ section {
   display: grid;
   grid-template-columns: 15% 70% 15%;
 
-  @include media(">tablet", "<=1024px") {
+  @include media(">tablet", "<=1260px") {
     grid-template-columns: 3% 94% 3%;
   }
 
@@ -270,7 +270,7 @@ section {
   display: grid;
   grid-template-columns: 15% 70% 15%;
 
-  @include media(">tablet", "<=1024px") {
+  @include media(">tablet", "<1260px") {
     grid-template-columns: 3% 94% 3%;
   }
 
@@ -288,7 +288,7 @@ section {
     display: grid;
     grid-template-columns: 70% 30%;
 
-    @include media(">tablet", "<=1024px") {
+    @include media(">tablet", "<1260px") {
       grid-column: 2;
       grid-template-columns: 100%;
     }
@@ -357,7 +357,7 @@ section {
       }
     }
 
-    @include media("<=1024px") {
+    @include media("<1260px") {
       grid-column: 1;
       grid-row: 2;
     }
@@ -389,7 +389,7 @@ section {
       width: 40px;
     }
 
-    @include media("<=1024px") {
+    @include media("<1260px") {
       grid-column: 1;
       grid-row: 3;
     }
@@ -413,7 +413,7 @@ section {
       padding: 10px !important;
     }
 
-    @include media("<=1024px") {
+    @include media("<1260px") {
       grid-column: 1;
       grid-row: 4;
     }
@@ -433,7 +433,12 @@ section {
       width: 200px;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
-      @include media("<=1024px") {
+      @include media("<1260px") {
+        margin-top: 5%;
+        margin-bottom: 15%;
+      }
+
+      @include media("<1024px") {
         margin-top: 5%;
         margin-bottom: 20%;
       }
