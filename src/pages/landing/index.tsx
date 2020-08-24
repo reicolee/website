@@ -47,7 +47,7 @@ const IndexPage = () => {
           <img src={portrait} className="portrait" alt="Reico's portrait"/>
         </div>
       </section>
-      <section className="about__section">
+      <section id="about" className="about__section">
         <div className="about__section__content">
           <h2 className="about__section__header section-header">About.</h2>
           <div className="box about__section__description">
@@ -82,8 +82,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      {/* TODO */}
-      <section className="work__section">
+      <section id="work" className="work__section">
         <div className="work__section__content">
           <h2 className="work__section__header section-header">Work.</h2>
           <div className="box work__section__item work__section__item1">
