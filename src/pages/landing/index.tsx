@@ -80,10 +80,10 @@ const IndexPage = () => {
           <div className="box about__section__col2">
             <h3 className="box-header">Facts.</h3>
             <ul>
-              <li>Born in the 6ix 🇨🇦</li>
+              <li>Born in <a target="_blank" rel="nofollow noopener noreferrer" href="https://en.wikipedia.org/wiki/Name_of_Toronto#Nicknames">the 6ix</a> 🇨🇦</li>
               <li>Raised in +852 🇭🇰</li>
               <li>Trilingual</li>
-              <li>Graduated from UBC Sauder</li>
+              <li>Graduated from <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.sauder.ubc.ca/">UBC Sauder</a></li>
               <li>Walking my cats daily 🐈</li>
               <li>FIFA Ultimate Team 🎮</li>
             </ul>
