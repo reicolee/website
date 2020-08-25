@@ -31,7 +31,7 @@ module.exports = {
     'Reico Lee, Reico, Lee, reicolee, software engineer, front-end engineer, full stack engineer, \
     full-stack engineer, NYC, web developer, web development, full stack developer, \
     full-stack engineer, full-stack developer, @reicolee, leereico@gmail.com',
-    author: '© 2020, Handcrafted by Reico Lee',
+    author: '© 2020, Designed and Built by Reico Lee',
     websiteRepoUrl: 'https://github.com/reicolee/website',
     siteUrl: 'https://reicolee.com/'
   },
