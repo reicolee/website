@@ -100,7 +100,7 @@ const IndexPage = () => {
             <p className="box-text-center">
              I work closely with product, design, customer success, operations, and marketing to make 
              delegation more accessible and seamless, developing better tooling on the web
-             to transform collaboration b/w executives and assistants.
+             to transform collaboration between executives and assistants.
             </p>
           </div>
           <div className="box work__section__item work__section__item2">
@@ -109,7 +109,7 @@ const IndexPage = () => {
             <BentoBoxLogo />
             <p className="box-text-center">
               I worked on a wide array of projects ranging from frontend, backend, or full stack. 
-              Noteable projects include improved data pipeline and analytics, implemented core accessibility features on 5000+ websites, 
+              Noteable projects include improved data pipeline & analytics, implemented core accessibility features on 5000+ websites, 
               streamlined company-wide productivity with better tooling, core CMS features development, and more.
             </p>
           </div>
