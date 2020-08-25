@@ -52,11 +52,11 @@ const IndexPage = () => {
           <h2 className="about__section__header section-header">About.</h2>
           <div className="box about__section__description">
             <p>
-              I’m a full stack software engineer based in NYC. I love building software and solving hard problems. 
-              No matter how big or small the task is, you will find me meticulously looking for the right solution that fits the context.
+              I’m a full stack software engineer based in NYC. I love building software and solving complex issues. 
+              Regardless of how major and minor the task is, I will seek the most optimal solution that fits the context.
             </p>
             <p>
-              Humility, resourcefulness, and open-mindedness are core to how I approach my work, and the people around me.
+              My core values and approaches are Humility, Resourcefulness, and Performance-Driven.
               My ultimate goal is to translate my passion into software development, perpetually work on improving my chops, and build
               great products that empower lives.
             </p>
@@ -115,7 +115,7 @@ const IndexPage = () => {
           </div>
           <div className="box work__section__item3">
             <h3 className="box-header">What's next?</h3>
-            <p className="box-text-center">Interested in working together? We should queue up a chat :)</p>
+            <p className="box-text-center">Want to learn more?</p>
             <a href='mailto:leereico@gmail.com?body=Hi Reico!'>Let's connect!</a>
           </div>
         </div>
