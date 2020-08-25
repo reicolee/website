@@ -115,7 +115,7 @@ const IndexPage = () => {
           </div>
           <div className="box work__section__item3">
             <h3 className="box-header">What's next?</h3>
-            <p className="box-text-center">Want to learn more?</p>
+            <p className="box-text-center">Have questions? Want to learn more?</p>
             <a href='mailto:leereico@gmail.com?body=Hi Reico!'>Let's connect!</a>
           </div>
         </div>
