@@ -56,7 +56,7 @@ const IndexPage = () => {
               Regardless of how major and minor the task is, you will find me meticulously looking for a solution that fits the context.
             </p>
             <p>
-              My core values and approaches are Humility, Resourcefulness, and Performance-Driven.
+              My core values and approaches are humility, resourcefulness, and performance-driven.
               My ultimate goal is to translate my passion into software development, perpetually work on improving my chops, and build
               great products that empower lives.
             </p>
