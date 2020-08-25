@@ -98,9 +98,9 @@ const IndexPage = () => {
             <span className="work__section__item__tenure">2019 - Present</span>
             <DoubleLogo />
             <p className="box-text-center">
-              I collaborate closely with product, design, and customer success to implement
-             core features in two React applications that facilitate and improve the delegation experienece
-             for executives and assistants.
+              I collaborate closely with product, design, and customer success to iterate on 
+             core features development, work primarily in two React frontend applications that facilitate and improve the delegation experienece
+             between executives and assistants.
             </p>
           </div>
           <div className="box work__section__item work__section__item2">
