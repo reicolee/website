@@ -163,9 +163,7 @@ const IndexPage = () => {
             <p className="box-text-center">
               Have questions? Want to learn more?
             </p>
-            <a href="mailto:leereico@gmail.com?body=Hi Reico!">
-              Let's connect!
-            </a>
+            <a href="mailto:leereico@gmail.com?body=Hi Reico!">Let's chat!</a>
           </div>
         </div>
       </section>
