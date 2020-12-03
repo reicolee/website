@@ -2,12 +2,32 @@ module.exports = {
   siteMetadata: {
     title: 'Reico Lee | Software Engineer',
     metaDescription: 'Hi, I’m Reico Lee, a full stack software engineer based in NYC, specializing in web development with TypeScript, React, Node.js, Django, and more.',
-    description: "I’m a full stack software engineer based in NYC. I love building software and solving hard problems. \
-    No matter how big or small the task is, you will find me meticulously looking for the \
-    right solution that fits the context. Humility, resourcefulness, and open-mindedness are \
-    core to how I approach my work, and the people around me. My ultimate goal is to translate \
-    my passion into software development, perpetually work on improving my chops, and build \
-    great products that empower lives.",
+    description: 'I’m a product-minded software engineer based in NYC. I love \
+    leveraging the use of technologies to leapfrog human/user \
+    problems. Regardless of how major or minor a problem is, you will \
+    find me meticulously looking for a solution that fits the context.',
+    descriptionTwo: 'My core values are humility, proactivity, and results-driven. My \
+    ultimate goal is to perpetually work on improving my chops, and \
+    build great products that empower lives.',
+    works: [
+      {
+        title: 'Double',
+        description: 'I collaborate closely with product, design, and customer success \
+        to iterate on core features development, work primarily in two \
+        React frontend applications that facilitate and improve the \
+        delegation experienece between executives and assistants.',
+        tenure: '2019 - Present',
+      },
+      {
+        title: 'BentoBox',
+        description: 'I worked on a wide array of projects across the stack. Noteable \
+        projects include improved data pipeline & analytics, implemented \
+        core accessibility features on 5000+ websites, streamlined \
+        company-wide productivity with better tooling, core CMS features \
+        development, reporting tools for customers, and more.', 
+        tenure: '2017 - 2019'
+      },
+    ],
     tagline: 'I build things on the web, and I love what I do.',
     socials: [
       {
@@ -33,7 +53,18 @@ module.exports = {
     full-stack engineer, full-stack developer, @reicolee, leereico@gmail.com',
     author: '© 2020, Designed and Built by Reico Lee',
     websiteRepoUrl: 'https://github.com/reicolee/website',
-    siteUrl: 'https://reicolee.com/'
+    siteUrl: 'https://reicolee.com/',
+    skills: [
+      'JavaScript (ES6+)',
+      'HTML5 & CSS3',
+      'NodeJS',
+      'React, React Native',
+      'Redux',
+      'Apollo GraphQL',
+      'Web accessibility',
+      'Python3',
+      'Django (w/ DRF)',
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

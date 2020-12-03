@@ -19,12 +19,25 @@ const IndexPage = () => {
         siteMetadata {
           tagline
           description
+          descriptionTwo
+          skills
+          works {
+            title
+            description
+            tenure
+          }
         }
       }
     }
   `)
 
-  const { tagline, description } = data.site.siteMetadata
+  const {
+    tagline,
+    description,
+    descriptionTwo,
+    works,
+    skills,
+  } = data.site.siteMetadata
 
   return (
     <Layout>
@@ -81,30 +94,15 @@ const IndexPage = () => {
         <div className="about__section__content">
           <h2 className="about__section__header section-header">About.</h2>
           <div className="box about__section__description">
-            <p>
-              I’m a product-minded software engineer based in NYC. I love
-              leveraging the use of technologies to leapfrog human/user
-              problems. Regardless of how major or minor a problem is, you will
-              find me meticulously looking for a solution that fits the context.
-            </p>
-            <p>
-              My core values are humility, proactivity, and results-driven. My
-              ultimate goal is to perpetually work on improving my chops, and
-              build great products that empower lives.
-            </p>
+            <p>{description}</p>
+            <p>{descriptionTwo}</p>
           </div>
           <div className="box about__section__col1">
             <h3 className="box-header">Proficiencies.</h3>
             <ul className="skills-list">
-              <li>JavaScript (ES6+)</li>
-              <li>HTML & CSS (w/ Sass)</li>
-              <li>Node.js</li>
-              <li>React, React Native</li>
-              <li>Redux</li>
-              <li>Web accessibility</li>
-              <li>GraphQL</li>
-              <li>Python 3</li>
-              <li>Django (w/ DRF)</li>
+              {skills.map(skill => (
+                <li>{skill}</li>
+              ))}
             </ul>
           </div>
           <div className="box about__section__col2">
@@ -142,29 +140,24 @@ const IndexPage = () => {
       <section id="work" className="work__section">
         <div className="work__section__content">
           <h2 className="work__section__header section-header">Work.</h2>
-          <div className="box work__section__item work__section__item1">
-            <h3 className="box-header">Double</h3>
-            <span className="work__section__item__tenure">2019 - Present</span>
-            <DoubleLogo />
-            <p className="box-text-center">
-              I collaborate closely with product, design, and customer success
-              to iterate on core features development, work primarily in two
-              React frontend applications that facilitate and improve the
-              delegation experienece between executives and assistants.
-            </p>
-          </div>
-          <div className="box work__section__item work__section__item2">
-            <h3 className="box-header">BentoBox</h3>
-            <span className="work__section__item__tenure">2017 - 2019</span>
-            <BentoBoxLogo />
-            <p className="box-text-center">
-              I worked on a wide array of projects across the stack. Noteable
-              projects include improved data pipeline & analytics, implemented
-              core accessibility features on 5000+ websites, streamlined
-              company-wide productivity with better tooling, core CMS features
-              development, reporting tools for customers, and more.
-            </p>
-          </div>
+          {works.map((experience, index) => (
+            <div
+              className={`box work__section__item work__section__item${
+                index + 1
+              }`}
+            >
+              <h3 className="box-header">{experience.title}</h3>
+              <span className="work__section__item__tenure">
+                {experience.tenure}
+              </span>
+              {experience.title === "Double" ? (
+                <DoubleLogo />
+              ) : (
+                <BentoBoxLogo />
+              )}
+              <p className="box-text-center">{experience.description}</p>
+            </div>
+          ))}
           <div className="box work__section__item3">
             <h3 className="box-header">What's next?</h3>
             <p className="box-text-center">
