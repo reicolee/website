@@ -5,7 +5,9 @@ module.exports = {
     description: 'I’m a product-minded software engineer based in NYC. I love \
     leveraging the use of technologies to leapfrog human/user \
     problems. Regardless of how major or minor a problem is, you will \
-    find me meticulously looking for a solution that fits the context.',
+    find me meticulously looking for a solution that fits the context. \
+    I am a disciple of writing clean, maintainable, well-tested code so my fellow devs \
+    (and my future self) would understand.',
     descriptionTwo: 'My core values are humility, proactivity, and results-driven. My \
     ultimate goal is to perpetually work on improving my chops, and \
     build great products that empower lives.',
