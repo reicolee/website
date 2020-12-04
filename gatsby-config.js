@@ -7,7 +7,7 @@ module.exports = {
     problems. Regardless of how major or minor a problem is, you will \
     find me meticulously looking for a solution that fits the context. \
     I am a disciple of writing clean, maintainable, and well-tested code so my fellow devs \
-    (and my future self) would understand.',
+    (and my future self) will not hate me :).',
     descriptionTwo: 'My core values are humility, proactivity, and results-driven. My \
     ultimate goal is to perpetually work on improving my chops, and \
     build great products that empower lives.',
