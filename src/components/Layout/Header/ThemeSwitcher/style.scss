@@ -1,6 +1,5 @@
-@import '../../../styles/colors.scss';
-@import '../../../styles/breakpoints.scss';
-
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
 
 .wrapperLabel {
   display: inline-block;
@@ -50,7 +49,7 @@ input {
 .slider:before {
   border-radius: 50%;
   position: absolute;
-  content: '';
+  content: "";
   height: 1.125rem;
   width: 1.125rem;
   left: 0.25rem;
@@ -92,7 +91,6 @@ input:checked + .slider:before {
   }
 }
 
-
 .mobileThemeSwitcher {
   display: none;
   position: absolute;
@@ -100,13 +98,13 @@ input:checked + .slider:before {
   left: 11rem;
   right: 0;
   bottom: 0;
-  
+
   @include media("<=phone") {
     display: inline-block;
     left: 0.5rem;
     pointer-events: none;
   }
-  
+
   .mobileSwitcherIcon {
     font-size: 20px;
   }
