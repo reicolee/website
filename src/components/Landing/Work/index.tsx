@@ -17,6 +17,7 @@ const Work = ({ works }) => (
       <h2 className="work__section__header section-header">{TITLE}</h2>
       {works.map((experience, index) => (
         <div
+          key={index}
           className={`box work__section__item work__section__item${index + 1}`}
         >
           <h3 className="box-header">{experience.title}</h3>

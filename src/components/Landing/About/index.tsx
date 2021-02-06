@@ -19,7 +19,7 @@ const About = ({ description, descriptionTwo, skills }) => (
         <h3 className="box-header">{SUBTITLE_ONE}</h3>
         <ul className="skills-list">
           {skills.map(skill => (
-            <li>{skill}</li>
+            <li key={skill}>{skill}</li>
           ))}
         </ul>
       </div>
