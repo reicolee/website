@@ -5,7 +5,7 @@ import SocialIcons from "../SocialIcons"
 
 import style from "./style.module.scss"
 
-const Footer = ({ isDark }) => {
+const Footer = () => {
   const {
     site: {
       siteMetadata: { author, websiteRepoUrl },
@@ -24,13 +24,13 @@ const Footer = ({ isDark }) => {
   )
 
   return (
-    <footer className={style.footer}>
-      <div className={style.footerSocialIcons}>
-        <SocialIcons className={style.icon} />
+    <footer className={style.outer}>
+      <div className={style.socialIcons}>
+        <SocialIcons />
       </div>
       <div className={style.author}>
         <a
-          className={isDark && style.dark}
+          className={style.authorLink}
           target="_blank"
           rel="nofollow noopener noreferrer"
           href={websiteRepoUrl}

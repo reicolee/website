@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
 
-import SocialIcons from '../SocialIcons'
+import SocialIcons from "../SocialIcons"
 
-import './style.scss';
+import "./style.scss"
 
 export default () => (
   <div className="left__sidebar">
-    <SocialIcons className="social-icon" />
+    <SocialIcons />
   </div>
-);
+)
