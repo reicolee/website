@@ -1,7 +1,7 @@
-@import 'src/styles/colors.scss';
-@import 'src/styles/breakpoints.scss';
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
 
-.skip-to-main-content {
+.skipToMainContent {
   position: absolute;
   top: auto;
   left: -999px;
@@ -10,7 +10,8 @@
   z-index: -99;
   overflow: hidden;
 
-  &:focus, &:active {
+  &:focus,
+  &:active {
     color: $light6Color;
     background-color: #737373;
     font-size: 16px;
@@ -18,7 +19,7 @@
     cursor: pointer;
     top: 0px;
     left: 0px;
-    width: auto;  
+    width: auto;
     height: auto;
     z-index: 99;
     outline: 0px;
@@ -29,7 +30,7 @@
   }
 }
 
-header {
+.navigation {
   margin: 0 auto;
   height: 120px;
   margin: 0 50px;
@@ -48,8 +49,7 @@ header {
   }
 }
 
-
-.icon-rl-icon {
+.iconRLIcon {
   &:before {
     content: "\e900";
     font-size: 56px;
@@ -60,13 +60,13 @@ header {
       font-size: 48px;
     }
   }
- 
-   &:hover {
-     @include hover-colors($light-theme: true);
-     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-   
-     .dark & {
-       @include hover-colors($light-theme: false);
-     }
-   }
- }
+
+  &:hover {
+    @include hover-colors($light-theme: true);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+    .dark & {
+      @include hover-colors($light-theme: false);
+    }
+  }
+}
