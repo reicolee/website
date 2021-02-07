@@ -24,7 +24,7 @@ const About = ({ description, descriptionTwo, skills }) => (
         </ul>
       </div>
       <div className="box about__section__col2">
-        <h3 className="box-header">{SUBTITLE_TWO}.</h3>
+        <h3 className="box-header">{SUBTITLE_TWO}</h3>
         <ul>
           <li>
             Born in{" "}
