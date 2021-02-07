@@ -86,7 +86,7 @@
         @include hover-colors($light-theme: true);
         transform: translateY(-3px);
 
-        .dark & {
+        &.dark {
           @include hover-colors($light-theme: false);
         }
       }

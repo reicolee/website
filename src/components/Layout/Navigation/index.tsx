@@ -1,4 +1,5 @@
 import React from "react"
+import cn from "classnames"
 
 import ThemeSwitcher from "./ThemeSwitcher"
 
@@ -11,7 +12,9 @@ const Navigation = ({ onClickSwitcher, isDark }) => (
     </a>
     <header className={style.navigation}>
       <nav>
-        <span className={`icon-rl-icon ${style.iconRLIcon}`}></span>
+        <span
+          className={cn(`icon-rl-icon`, style.iconRLIcon, isDark && style.dark)}
+        ></span>
         <ThemeSwitcher
           name="Theme color switcher"
           checked={isDark}

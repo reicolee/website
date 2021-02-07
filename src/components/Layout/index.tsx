@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         <LeftMinSidebar />
         <main id="content">{children}</main>
       </div>
-      <Footer />
+      <Footer isDark={isDark} />
     </div>
   )
 }
