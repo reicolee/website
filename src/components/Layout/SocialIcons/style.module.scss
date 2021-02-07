@@ -1,0 +1,86 @@
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
+
+.list {
+  list-style: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  flex-direction: column;
+
+  @include media("<=tablet") {
+    flex-direction: row;
+  }
+
+  @include media(">tablet") {
+    &::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      // background-color: $dark6Color;
+      background-color: $light6Color;
+      margin: 25px auto;
+
+      &.dark {
+        background-color: $light6Color;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      // background-color: $dark6Color;
+      background-color: $light6Color;
+      margin: 10px auto;
+
+      &.dark {
+        background-color: $light6Color;
+      }
+    }
+  }
+}
+
+.listItem {
+  display: list-item;
+  text-align: center;
+  height: 45px;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  @include media("<=tablet") {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.socialLink {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+  &:hover {
+    // @include hover-colors($light-theme: true);
+    @include hover-colors($light-theme: false);
+    transform: translateY(-3px);
+
+    &.dark {
+      @include hover-colors($light-theme: false);
+    }
+  }
+}
+
+.icon {
+  height: 24px !important;
+  width: 24px !important;
+}

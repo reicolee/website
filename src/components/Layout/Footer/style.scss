@@ -1,8 +1,8 @@
-@import '../../../styles/colors.scss';
-@import '../../../styles/breakpoints.scss';
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
 
 footer {
-  display: flex !important; 
+  display: flex !important;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
@@ -21,45 +21,6 @@ footer {
     margin-bottom: 20px;
     @include media("<=tablet") {
       display: block;
-      ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        -webkit-box-align: center;
-        align-items: center;
-        padding: 0px;
-        margin: 0px;
-    
-        li {
-          display: list-item;
-          text-align: center;
-          height: 45px;
-  
-    
-          a {
-            padding: 10px;
-            display: inline-block;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    
-            &:hover {
-              @include hover-colors($light-theme: true);
-              transform: translateY(-3px);
-    
-              .dark & {
-                @include hover-colors($light-theme: false);
-              }
-            }
-    
-            .footer-social-icon {
-              height: 24px;
-              width: 24px;
-            }
-          }
-        }
-      }
     }
   }
 
@@ -69,7 +30,7 @@ footer {
     @include media("<=phone") {
       margin: 5px 0;
     }
-    
+
     a {
       float: right;
       margin-right: 2rem;
@@ -94,4 +55,3 @@ footer {
     }
   }
 }
-
