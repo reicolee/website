@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useCallback } from "react"
 import PropTypes from "prop-types"
 
-import Header from "./Header"
+import Navigation from "./Navigation"
 import LeftMinSidebar from "./LeftMiniSidebar"
 import Footer from "./Footer"
 
@@ -10,9 +10,13 @@ import "./style.scss"
 const Layout = ({ children }) => {
   const [isDark, setDark] = useState(true)
 
+  const onClickSwitcher = useCallback(() => {
+    setDark(!isDark)
+  }, [isDark])
+
   return (
     <div className={`App ${isDark ? "dark" : ""}`}>
-      <Header setDark={() => setDark(!isDark)} isDark={isDark} />
+      <Navigation onClickSwitcher={onClickSwitcher} isDark={isDark} />
       <div className="contentOuter">
         <LeftMinSidebar />
         <main id="content">{children}</main>
