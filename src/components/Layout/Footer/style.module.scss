@@ -16,7 +16,7 @@ footer {
   @include media("<=tablet") {
     min-height: 180px;
   }
-  .footer-social-icons {
+  .socialIcons {
     display: none;
     margin-bottom: 20px;
     @include media("<=tablet") {
@@ -30,28 +30,29 @@ footer {
     @include media("<=phone") {
       margin: 5px 0;
     }
+  }
+}
 
-    a {
-      float: right;
-      margin-right: 2rem;
-      color: inherit;
-      text-decoration: none;
-      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+.authorLink {
+  float: right;
+  margin-right: 2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
-      @include media("<=tablet") {
-        float: unset;
-        margin-right: unset;
-        font-size: 16px;
-      }
+  @include media("<=tablet") {
+    float: unset;
+    margin-right: unset;
+    font-size: 16px;
+  }
 
-      &:hover {
-        @include hover-colors($light-theme: true);
-        transform: translateY(-3px);
+  &:hover {
+    // @include hover-colors($light-theme: true);
+    @include hover-colors($light-theme: false);
+    transform: translateY(-3px);
 
-        .dark & {
-          @include hover-colors($light-theme: false);
-        }
-      }
+    &.dark {
+      @include hover-colors($light-theme: false);
     }
   }
 }

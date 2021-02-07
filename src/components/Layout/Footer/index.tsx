@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import SocialIcons from "../SocialIcons"
 
-import "./style.scss"
+import style from "./style.module.scss"
 
 const Footer = () => {
   const {
@@ -24,12 +24,13 @@ const Footer = () => {
   )
 
   return (
-    <footer>
-      <div className="footer-social-icons">
+    <footer className={style.outer}>
+      <div className={style.socialIcons}>
         <SocialIcons />
       </div>
-      <div className="author">
+      <div className={style.author}>
         <a
+          className={style.authorLink}
           target="_blank"
           rel="nofollow noopener noreferrer"
           href={websiteRepoUrl}
