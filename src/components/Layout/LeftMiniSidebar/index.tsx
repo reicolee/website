@@ -2,10 +2,10 @@ import React from "react"
 
 import SocialIcons from "../SocialIcons"
 
-import "./style.scss"
+import style from "./style.module.scss"
 
 export default () => (
-  <div className="left__sidebar">
+  <div className={style.leftSidebar}>
     <SocialIcons />
   </div>
 )
