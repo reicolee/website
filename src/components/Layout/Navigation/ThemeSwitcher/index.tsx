@@ -1,41 +1,42 @@
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSun, faMoon, faAdjust } from "@fortawesome/free-solid-svg-icons"
+import cn from "classnames"
 
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faMoon, faAdjust } from '@fortawesome/free-solid-svg-icons'
-
-import './style.scss';
+import style from "./style.module.scss"
 
 type tProps = {
-  name: string,
-  checked: boolean,
-  checkedLabel?: string,
-  uncheckedLabel?: string,
+  name: string
+  checked: boolean
+  checkedLabel?: string
+  uncheckedLabel?: string
   onChange: () => void
-};
+}
 
-export default ({
-  name,
-  checked,
-  onChange
-}: tProps) => (
-  <>
-    <label className={`wrapperLabel ${checked ? 'dark' : ''}`}>
-      <span className='sliderLabel sliderLabel__left'>
-        <FontAwesomeIcon icon={faSun} className='icon' />
+export default ({ name, checked, onChange }: tProps) => (
+  <div className={checked && style.dark}>
+    <label className={style.wrapperLabel}>
+      <span className={cn(style.sliderLabel, style.sliderLabelLeft)}>
+        <FontAwesomeIcon icon={faSun} className="icon" />
       </span>
       <input
+        className={style.checkbox}
         name={name}
-        type='checkbox'
+        type="checkbox"
         checked={checked}
         onChange={onChange}
       />
-      <span className='slider' />
-      <span className='sliderLabel sliderLabel__right'>
-        <FontAwesomeIcon icon={faMoon} className='icon' />
+      <span className={style.slider} />
+      <span className={cn(style.sliderLabel, style.sliderLabelRight)}>
+        <FontAwesomeIcon icon={faMoon} className="icon" />
       </span>
-      <span className="mobileThemeSwitcher">
-        <FontAwesomeIcon icon={faAdjust} onClick={onChange} className='mobileSwitcherIcon' />
+      <span className={style.mobileThemeSwitcher}>
+        <FontAwesomeIcon
+          icon={faAdjust}
+          onClick={onChange}
+          className={style.mobileSwitcherIcon}
+        />
       </span>
     </label>
-  </>
-);
+  </div>
+)

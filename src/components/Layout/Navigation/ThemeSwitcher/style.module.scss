@@ -21,12 +21,25 @@
     padding: 20px;
   }
 
-  &.dark {
+  .dark & {
     color: $darkFont6Color;
   }
-}
-input {
-  display: none;
+
+  input {
+    display: none;
+  }
+
+  input:checked + .slider {
+    background-color: #4bd863;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 0.0625rem $light6Color;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(1.35rem);
+  }
 }
 
 .slider {
@@ -58,18 +71,6 @@ input {
   transition: 0.4s;
 }
 
-input:checked + .slider {
-  background-color: #4bd863;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 0.0625rem $light6Color;
-}
-
-input:checked + .slider:before {
-  transform: translateX(1.35rem);
-}
-
 .sliderLabel {
   cursor: pointer;
   position: absolute;
@@ -78,11 +79,11 @@ input:checked + .slider:before {
   color: inherit;
   display: inline-block;
 
-  &__left {
+  &Left {
     left: 6.5rem;
   }
 
-  &__right {
+  &Right {
     left: 12.3rem;
   }
 

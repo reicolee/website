@@ -1,4 +1,4 @@
-import React, { useCallback } from "react"
+import React, { useCallback, useContext } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -8,6 +8,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+
+import Context from "src/store/context"
 
 import style from "./style.module.scss"
 
@@ -45,6 +47,7 @@ const SocialIcon = ({ label, url }) => {
 }
 
 const SocialIcons = () => {
+  const { state } = useContext(Context)
   const data = useStaticQuery(graphql`
     query SocialMetadataQuery {
       site {
@@ -61,13 +64,15 @@ const SocialIcons = () => {
   const { socials } = data.site.siteMetadata
 
   return (
-    <ul className={style.list}>
-      {socials.map((social, index) => (
-        <li className={style.listItem} key={`${social.name}-${index}`}>
-          <SocialIcon label={social.name} url={social.url} />
-        </li>
-      ))}
-    </ul>
+    <div className={state.isDark && style.dark}>
+      <ul className={style.list}>
+        {socials.map((social, index) => (
+          <li className={style.listItem} key={`${social.name}-${index}`}>
+            <SocialIcon label={social.name} url={social.url} />
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
