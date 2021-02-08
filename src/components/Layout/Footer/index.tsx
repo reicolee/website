@@ -28,7 +28,7 @@ const Footer = () => {
   )
 
   return (
-    <footer className={cn(style.outer, state.isDark && style.dark)}>
+    <footer className={cn(style.outer, state && state.isDark && style.dark)}>
       <div className={style.socialIcons}>
         <SocialIcons />
       </div>

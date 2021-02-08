@@ -64,7 +64,7 @@ const SocialIcons = () => {
   const { socials } = data.site.siteMetadata
 
   return (
-    <div className={state.isDark && style.dark}>
+    <div className={state && state.isDark && style.dark}>
       <ul className={style.list}>
         {socials.map((social, index) => (
           <li className={style.listItem} key={`${social.name}-${index}`}>
