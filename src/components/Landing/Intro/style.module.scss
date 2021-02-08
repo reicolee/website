@@ -1,0 +1,172 @@
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
+
+.intro {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 150px;
+
+  @include media("<=desktop") {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "introTwo"
+      "introOne";
+  }
+
+  // margin-bottom: 20%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+// Left
+
+.left {
+  align-items: center;
+
+  @include media("<=desktop") {
+    grid-area: introOne;
+  }
+}
+
+.taglineSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 12vh;
+  margin-left: 11rem;
+  text-align: start;
+
+  @include media(">tablet", "<=desktop") {
+    margin-left: 7rem;
+  }
+
+  @include media("<=tablet") {
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  @include media("<=phone") {
+    margin-top: 3rem;
+    margin-left: 0.2em;
+  }
+}
+
+.greeting {
+  font-size: 32px;
+  font-weight: bold;
+
+  @include media("<=phone") {
+    font-size: 18px;
+  }
+}
+
+.heading {
+  font-size: calc(20px + 3.7vw);
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  span {
+    color: $lightSpecialColor;
+
+    .dark & {
+      color: $darkSpecialColor;
+    }
+  }
+
+  @include media("<=phone") {
+    font-size: 52px;
+  }
+}
+
+.tagline {
+  font-size: calc(10px + 2vw);
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  @include media("<=phone") {
+    font-size: 20px;
+  }
+}
+
+.companies {
+  margin-top: 2rem;
+
+  @include media("<=phone") {
+    font-size: 14px;
+  }
+}
+
+.companyLink {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  &:hover {
+    @include hover-colors($light-theme: true);
+
+    .dark & {
+      @include hover-colors($light-theme: false);
+    }
+  }
+}
+
+.resumeBtn {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+  margin-top: 10%;
+  font-size: 24px;
+  width: 200px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+  &:hover {
+    @include hover-colors($light-theme: true);
+
+    .dark & {
+      @include hover-colors($light-theme: false);
+    }
+  }
+
+  @include media("<=phone") {
+    font-size: 20px;
+  }
+}
+
+.externalLinkIcon {
+  margin-left: 5%;
+  font-size: 20px;
+
+  @include media("<=phone") {
+    font-size: 18px;
+  }
+}
+
+// Right
+
+.right {
+  align-items: center;
+
+  @include media("<=desktop") {
+    grid-area: introTwo;
+  }
+}
+
+.portrait {
+  margin-top: 18%;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+
+  @include media("<=tablet") {
+    margin-top: 0;
+    height: 250px;
+    width: 250px;
+  }
+
+  @include media("<=phone") {
+    height: 180px;
+    width: 180px;
+  }
+}
