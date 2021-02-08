@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     dispatch({ type: TOGGLE_DARK_MODE })
   }, [dispatch])
   return (
-    <div className={`App ${state.isDark ? "dark" : ""}`}>
+    <div className={`App ${state && state.isDark ? "dark" : ""}`}>
       <Navigation onClickSwitcher={onClickSwitcher} isDark={state.isDark} />
       <div className="contentOuter">
         <LeftMinSidebar />
