@@ -18,7 +18,10 @@ const Layout = ({ children }) => {
   }, [dispatch])
   return (
     <div className={`App ${state && state.isDark ? "dark" : ""}`}>
-      <Navigation onClickSwitcher={onClickSwitcher} isDark={state.isDark} />
+      <Navigation
+        onClickSwitcher={onClickSwitcher}
+        isDark={(state && state.isDark) || true}
+      />
       <div className="contentOuter">
         <LeftMinSidebar />
         <main id="content">{children}</main>
