@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 import DoubleLogo from "src/svg/double_logo.svg"
 import BentoBoxLogo from "src/svg/bentobox-logo.svg"
+import SectionTitle from "src/components/system/SectionTitle"
 
 import "./style.scss"
 
@@ -14,7 +15,7 @@ const CTA = "Let's chat!"
 const Work = ({ works }) => (
   <section id="work" className="work__section">
     <div className="work__section__content">
-      <h2 className="work__section__header section-header">{TITLE}</h2>
+      <SectionTitle title={TITLE} />
       {works.map((experience, index) => (
         <div
           key={index}

@@ -1,7 +1,7 @@
 @import "src/styles/colors.scss";
 @import "src/styles/breakpoints.scss";
 
-footer {
+.outer {
   display: flex !important;
   -webkit-box-pack: center;
   justify-content: center;
@@ -47,11 +47,10 @@ footer {
   }
 
   &:hover {
-    // @include hover-colors($light-theme: true);
-    @include hover-colors($light-theme: false);
+    @include hover-colors($light-theme: true);
     transform: translateY(-3px);
 
-    &.dark {
+    .dark & {
       @include hover-colors($light-theme: false);
     }
   }

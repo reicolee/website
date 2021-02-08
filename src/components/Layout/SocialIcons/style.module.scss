@@ -15,36 +15,33 @@
   }
 
   @include media(">tablet") {
-    &::before {
+    &:before {
       content: "";
       display: block;
       width: 1px;
       height: 50px;
-      // background-color: $dark6Color;
-      background-color: $light6Color;
+      background-color: $dark6Color;
       margin: 25px auto;
 
-      &.dark {
+      .dark & {
         background-color: $light6Color;
       }
     }
 
-    &::after {
+    &:after {
       content: "";
       display: block;
       width: 1px;
       height: 50px;
-      // background-color: $dark6Color;
-      background-color: $light6Color;
+      background-color: $dark6Color;
       margin: 10px auto;
 
-      &.dark {
+      .dark & {
         background-color: $light6Color;
       }
     }
   }
 }
-
 .listItem {
   display: list-item;
   text-align: center;
@@ -70,11 +67,10 @@
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
   &:hover {
-    // @include hover-colors($light-theme: true);
-    @include hover-colors($light-theme: false);
+    @include hover-colors($light-theme: true);
     transform: translateY(-3px);
 
-    &.dark {
+    .dark & {
       @include hover-colors($light-theme: false);
     }
   }

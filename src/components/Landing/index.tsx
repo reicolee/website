@@ -5,8 +5,6 @@ import Intro from "./Intro"
 import About from "./About"
 import Work from "./Work"
 
-import "./style.scss"
-
 const Landing = ({ data }) => (
   <>
     <Intro tagline={data.tagline} />

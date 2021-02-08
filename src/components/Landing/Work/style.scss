@@ -35,19 +35,6 @@
     }
   }
 
-  &__header {
-    grid-column: 1 / 3;
-    grid-row: 1;
-
-    @include media("<=tablet") {
-      grid-column: 1;
-    }
-
-    @include media("<=phone") {
-      grid-column: 1;
-    }
-  }
-
   &__item {
     display: grid;
     justify-items: center;
