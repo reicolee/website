@@ -1,0 +1,62 @@
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
+
+.content {
+  grid-column: 2 / 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include media("<=tablet") {
+    grid-column: 1;
+    grid-template-columns: 100%;
+  }
+}
+
+.description {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  background-color: $light5Color;
+  color: $lightFont5Color;
+  line-height: 160%;
+
+  .dark & {
+    background-color: $dark5Color;
+    color: $darkFont5Color;
+  }
+
+  @include media("<=tablet") {
+    padding: 10%;
+    grid-column: 1;
+  }
+
+  p {
+    margin: 20px auto 0.65em;
+  }
+}
+
+.proficiencies {
+  background-color: $light4Color;
+  color: $lightFont4Color;
+  .dark & {
+    background-color: $dark4Color;
+    color: $darkFont4Color;
+  }
+}
+
+.facts {
+  background-color: $light3Color;
+  color: $lightFont3Color;
+  .dark & {
+    background-color: $dark3Color;
+    color: $darkFont3Color;
+  }
+}
+
+.skillsList {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include media("<=phone") {
+    grid-template-columns: 100%;
+  }
+}

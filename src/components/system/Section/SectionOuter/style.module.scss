@@ -1,0 +1,21 @@
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
+
+.outer {
+  margin: 150px 0px;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+
+  @include media(">tablet", "<=1260px") {
+    grid-template-columns: 3% 94% 3%;
+  }
+
+  @include media("<=tablet") {
+    grid-template-columns: 100%;
+  }
+
+  @include media("<=phone") {
+    margin: 80px auto;
+    grid-template-columns: 100%;
+  }
+}

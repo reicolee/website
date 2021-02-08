@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import DoubleLogo from "src/svg/double_logo.svg"
 import BentoBoxLogo from "src/svg/bentobox-logo.svg"
-import SectionTitle from "src/components/system/SectionTitle"
+import SectionTitle from "src/components/system/Section/SectionTitle"
 
 import "./style.scss"
 
