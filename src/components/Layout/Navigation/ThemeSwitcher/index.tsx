@@ -17,7 +17,7 @@ export default ({ name, checked, onChange }: tProps) => (
   <div className={checked && style.dark}>
     <label className={style.wrapperLabel}>
       <span className={cn(style.sliderLabel, style.sliderLabelLeft)}>
-        <FontAwesomeIcon icon={faSun} className="icon" />
+        <FontAwesomeIcon icon={faSun} />
       </span>
       <input
         className={style.checkbox}
@@ -28,7 +28,7 @@ export default ({ name, checked, onChange }: tProps) => (
       />
       <span className={style.slider} />
       <span className={cn(style.sliderLabel, style.sliderLabelRight)}>
-        <FontAwesomeIcon icon={faMoon} className="icon" />
+        <FontAwesomeIcon icon={faMoon} />
       </span>
       <span className={style.mobileThemeSwitcher}>
         <FontAwesomeIcon

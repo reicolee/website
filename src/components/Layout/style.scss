@@ -1,24 +1,25 @@
-@import '../../styles/colors.scss';
-@import '../../styles/reset.scss';
-@import '../../styles/breakpoints.scss';
+@import "src/styles/colors.scss";
+@import "src/styles/reset.scss";
+@import "src/styles/breakpoints.scss";
 
 @include reset-html-elements;
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../../fonts/icomoon.eot?hs0vl9');
-  src:  url('../../fonts/icomoon.eot?hs0vl9#iefix') format('embedded-opentype'),
-    url('../../fonts/icomoon.ttf?hs0vl9') format('truetype'),
-    url('../../fonts/icomoon.woff?hs0vl9') format('woff'),
-    url('../../fonts/icomoon.svg?hs0vl9#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../../fonts/icomoon.eot?hs0vl9");
+  src: url("../../fonts/icomoon.eot?hs0vl9#iefix") format("embedded-opentype"),
+    url("../../fonts/icomoon.ttf?hs0vl9") format("truetype"),
+    url("../../fonts/icomoon.woff?hs0vl9") format("woff"),
+    url("../../fonts/icomoon.svg?hs0vl9#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -59,4 +60,3 @@ main {
     margin: 0;
   }
 }
-

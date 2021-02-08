@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import SectionTitle from "src/components/system/SectionTitle"
+
 import "./style.scss"
 
 const TITLE = "About."
@@ -10,7 +12,8 @@ const SUBTITLE_TWO = "Facts."
 const About = ({ description, descriptionTwo, skills }) => (
   <section id="about" className="about__section">
     <div className="about__section__content">
-      <h2 className="about__section__header section-header">{TITLE}</h2>
+      {/* <h2 className="about__section__header section-header">{TITLE}</h2> */}
+      <SectionTitle title={TITLE} />
       <div className="box about__section__description">
         <p>{description}</p>
         <p>{descriptionTwo}</p>
