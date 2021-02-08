@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   }, [dispatch])
 
   return (
-    <div className={`App ${state ? `${state.isDark ? "dark" : ""}` : "dark"}`}>
+    <div className={`App ${state && state.isDark ? "dark" : ""}`}>
       <Navigation
         onClickSwitcher={onClickSwitcher}
         isDark={state ? state.isDark : true}
