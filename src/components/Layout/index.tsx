@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
   const onClickSwitcher = useCallback(() => {
     dispatch({ type: TOGGLE_DARK_MODE })
   }, [dispatch])
+
   return (
     <div className={`App ${state && state.isDark ? "dark" : ""}`}>
       <Navigation
