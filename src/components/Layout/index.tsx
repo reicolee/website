@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <div className={`App ${state && state.isDark ? "dark" : ""}`}>
       <Navigation
         onClickSwitcher={onClickSwitcher}
-        isDark={(state && state.isDark) || true}
+        isDark={state ? state.isDark : true}
       />
       <div className="contentOuter">
         <LeftMinSidebar />
