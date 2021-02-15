@@ -25,88 +25,91 @@
     color: $darkFont6Color;
   }
 
-  input {
-    display: none;
-  }
+  // input {
+  //   display: none;
+  // }
 
-  input:checked + .slider {
-    background-color: #4bd863;
-  }
+  // input:checked + .slider {
+  //   background-color: #4bd863;
+  // }
 
-  input:focus + .slider {
-    box-shadow: 0 0 0.0625rem $light6Color;
-  }
+  // input:focus + .slider {
+  //   box-shadow: 0 0 0.0625rem $light6Color;
+  // }
 
-  input:checked + .slider:before {
-    transform: translateX(1.35rem);
-  }
+  // input:checked + .slider:before {
+  //   transform: translateX(1.35rem);
+  // }
 }
 
-.slider {
-  border-radius: 2rem;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 8.5rem;
-  right: 0;
-  bottom: 0;
-  width: 3rem;
-  background-color: #d3d3d3;
-  transition: 0.4s;
+// .slider {
+//   border-radius: 2rem;
+//   position: absolute;
+//   cursor: pointer;
+//   top: 0;
+//   left: 8.5rem;
+//   right: 0;
+//   bottom: 0;
+//   width: 3rem;
+//   background-color: #d3d3d3;
+//   transition: 0.4s;
 
-  @include media("<=phone") {
-    display: none;
-  }
-}
+//   @include media("<=phone") {
+//     display: none;
+//   }
+// }
 
-.slider:before {
-  border-radius: 50%;
-  position: absolute;
-  content: "";
-  height: 1.125rem;
-  width: 1.125rem;
-  left: 0.25rem;
-  bottom: 0.2rem;
-  background-color: white;
-  transition: 0.4s;
-}
+// .slider:before {
+//   border-radius: 50%;
+//   position: absolute;
+//   content: "";
+//   height: 1.125rem;
+//   width: 1.125rem;
+//   left: 0.25rem;
+//   bottom: 0.2rem;
+//   background-color: white;
+//   transition: 0.4s;
+// }
 
-.sliderLabel {
-  cursor: pointer;
-  position: absolute;
-  top: 0.1rem;
-  font-size: 18px;
-  color: inherit;
-  display: inline-block;
+// .sliderLabel {
+//   cursor: pointer;
+//   position: absolute;
+//   top: 0.1rem;
+//   font-size: 18px;
+//   color: inherit;
+//   display: inline-block;
 
-  &Left {
-    left: 6.5rem;
-  }
+//   &Left {
+//     left: 6.5rem;
+//   }
 
-  &Right {
-    left: 12.3rem;
-  }
+//   &Right {
+//     left: 12.3rem;
+//   }
 
-  @include media("<=phone") {
-    display: none;
-  }
-}
+//   @include media("<=phone") {
+//     display: none;
+//   }
+// }
 
 .mobileThemeSwitcher {
-  display: none;
+  // display: none;
   position: absolute;
   top: 0;
   left: 11rem;
   right: 0;
   bottom: 0;
+  cursor: pointer;
 
   @include media("<=phone") {
     display: inline-block;
     left: 0.5rem;
-    pointer-events: none;
   }
 
   .mobileSwitcherIcon {
-    font-size: 20px;
+    font-size: 25px;
+    @include media("<=phone") {
+      font-size: 20px;
+    }
   }
 }

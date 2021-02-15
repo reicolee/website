@@ -7,7 +7,7 @@ import cn from "classnames"
 import Context from "src/store/context"
 import portrait from "src/images/portrait.jpg"
 
-const PROFESSION = "Software Engineer"
+const PROFESSION = "Full Stack Software Engineer."
 const FORMER_COMPANY = "@BentoBox"
 const CURRENT_COMPANY = "@Double"
 const CTA = "View resumé"
@@ -20,13 +20,11 @@ const Intro = ({ tagline }) => {
     <section className={cn(style.intro, state.isDark && style.dark)}>
       <div className={cn(style.col, style.left)}>
         <div className={style.taglineSection}>
-          <p className={style.greeting}>Hi,</p>
           <h1 className={style.heading}>
-            I'm <span>Reico</span> Lee.
+            <span>Reico</span> Lee.
           </h1>
-          <h2 className={style.tagline}>{tagline}</h2>
+          <h2 className={style.tagline}>{PROFESSION}</h2>
           <p className={style.companies}>
-            {PROFESSION}{" "}
             <a
               className={style.companyLink}
               target="_blank"

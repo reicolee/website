@@ -35,12 +35,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 12vh;
+  margin-top: 18vh;
   margin-left: 11rem;
   text-align: start;
 
   @include media(">tablet", "<=desktop") {
-    margin-left: 7rem;
+    margin-left: 0rem;
   }
 
   @include media("<=tablet") {

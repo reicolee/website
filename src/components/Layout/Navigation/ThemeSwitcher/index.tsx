@@ -16,7 +16,7 @@ type tProps = {
 export default ({ name, checked, onChange }: tProps) => (
   <div className={checked && style.dark}>
     <label className={style.wrapperLabel}>
-      <span className={cn(style.sliderLabel, style.sliderLabelLeft)}>
+      {/* <span className={cn(style.sliderLabel, style.sliderLabelLeft)}>
         <FontAwesomeIcon icon={faSun} />
       </span>
       <input
@@ -29,7 +29,7 @@ export default ({ name, checked, onChange }: tProps) => (
       <span className={style.slider} />
       <span className={cn(style.sliderLabel, style.sliderLabelRight)}>
         <FontAwesomeIcon icon={faMoon} />
-      </span>
+      </span> */}
       <span className={style.mobileThemeSwitcher}>
         <FontAwesomeIcon
           icon={faAdjust}
