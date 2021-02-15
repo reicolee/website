@@ -5,8 +5,6 @@ import Layout from "src/components/Layout"
 import SEO from "src/components/SEO"
 import Landing from "src/components/Landing"
 
-import "./style.scss"
-
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query SiteMetadataQuery {

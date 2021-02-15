@@ -6,6 +6,8 @@ import Context from "src/store/context"
 
 import SectionOuter from "src/components/system/Section/SectionOuter"
 import SectionTitle from "src/components/system/Section/SectionTitle"
+import BoxOuter from "src/components/system/Box/BoxOuter"
+import BoxTitle from "src/components/system/Box/BoxTitle"
 
 import style from "./style.module.scss"
 
@@ -18,13 +20,13 @@ const About = ({ description, descriptionTwo, skills }) => {
   return (
     <SectionOuter slug="about">
       <div className={cn(style.content, state.isDark && style.dark)}>
-        <SectionTitle title={TITLE} />
-        <div className={cn("box", style.description)}>
+        <SectionTitle isDark={state.isDark}>{TITLE}</SectionTitle>
+        <BoxOuter className={style.description}>
           <p>{description}</p>
           <p>{descriptionTwo}</p>
-        </div>
-        <div className={cn("box", style.proficiencies)}>
-          <h3 className="box-header">{SUBTITLE_ONE}</h3>
+        </BoxOuter>
+        <BoxOuter className={style.proficiencies}>
+          <BoxTitle>{SUBTITLE_ONE}</BoxTitle>
           <ul className={cn(style.list, style.skillsList)}>
             {skills.map(skill => (
               <li key={skill} className={style.listItem}>
@@ -32,9 +34,9 @@ const About = ({ description, descriptionTwo, skills }) => {
               </li>
             ))}
           </ul>
-        </div>
-        <div className={cn("box", style.facts)}>
-          <h3 className="box-header">{SUBTITLE_TWO}</h3>
+        </BoxOuter>
+        <BoxOuter className={style.facts}>
+          <BoxTitle>{SUBTITLE_TWO}</BoxTitle>
           <ul className={style.list}>
             <li className={style.listItem}>
               Born in{" "}
@@ -64,7 +66,7 @@ const About = ({ description, descriptionTwo, skills }) => {
             <li className={style.listItem}>Taking naps with my cat 🐈</li>
             <li className={style.listItem}>FIFA Ultimate Team 🎮</li>
           </ul>
-        </div>
+        </BoxOuter>
       </div>
     </SectionOuter>
   )

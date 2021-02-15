@@ -7,6 +7,8 @@ import DoubleLogo from "src/svg/double_logo.svg"
 import BentoBoxLogo from "src/svg/bentobox-logo.svg"
 import SectionOuter from "src/components/system/Section/SectionOuter"
 import SectionTitle from "src/components/system/Section/SectionTitle"
+import BoxOuter from "src/components/system/Box/BoxOuter"
+import BoxTitle from "src/components/system/Box/BoxTitle"
 
 import style from "./style.module.scss"
 
@@ -20,22 +22,20 @@ const Work = ({ works }) => {
   return (
     <SectionOuter slug="work">
       <div className={cn(style.content, state.isDark && style.dark)}>
-        <SectionTitle title={TITLE} />
+        <SectionTitle isDark={state.isDark}>{TITLE}</SectionTitle>
         {works.map((experience, index) => (
-          <div
+          <BoxOuter
             key={index}
-            className={cn(`box`, style.item, style[`item${index + 1}`])}
+            className={cn(style.item, style[`item${index + 1}`])}
           >
-            <h3 className={cn("box-header", style.boxTitle)}>
-              {experience.title}
-            </h3>
+            <BoxTitle className={style.boxTitle}>{experience.title}</BoxTitle>
             <span className={style.tenure}>{experience.tenure}</span>
             {experience.title === "Double" ? <DoubleLogo /> : <BentoBoxLogo />}
             <p className={style.boxDescription}>{experience.description}</p>
-          </div>
+          </BoxOuter>
         ))}
-        <div className={cn(`box`, style.item3)}>
-          <h3 className="box-header">{CTA_TITLE}</h3>
+        <BoxOuter className={style.item3}>
+          <BoxTitle>{CTA_TITLE}</BoxTitle>
           <p className={style.boxDescription}>{CTA_SUBTITLE}</p>
           <a
             className={style.cta}
@@ -43,7 +43,7 @@ const Work = ({ works }) => {
           >
             {CTA}
           </a>
-        </div>
+        </BoxOuter>
       </div>
     </SectionOuter>
   )
