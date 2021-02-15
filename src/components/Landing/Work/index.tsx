@@ -10,7 +10,7 @@ import "./style.scss"
 const TITLE = "Work."
 const CTA_TITLE = "What's next?"
 const CTA_SUBTITLE = "Have questions? Want to learn more?"
-const CTA = "Let's chat!"
+const CTA = "Let's connect!"
 
 const Work = ({ works }) => (
   <section id="work" className="work__section">

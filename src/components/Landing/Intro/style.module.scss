@@ -54,15 +54,6 @@
   }
 }
 
-.greeting {
-  font-size: 32px;
-  font-weight: bold;
-
-  @include media("<=phone") {
-    font-size: 18px;
-  }
-}
-
 .heading {
   font-size: calc(20px + 3.7vw);
   line-height: 130%;
