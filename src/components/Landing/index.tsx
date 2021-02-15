@@ -7,7 +7,7 @@ import Work from "./Work"
 
 const Landing = ({ data }) => (
   <>
-    <Intro tagline={data.tagline} />
+    <Intro />
     <About
       description={data.description}
       descriptionTwo={data.descriptionTwo}

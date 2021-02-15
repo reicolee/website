@@ -14,7 +14,7 @@ const CTA = "View resumé"
 
 import style from "./style.module.scss"
 
-const Intro = ({ tagline }) => {
+const Intro = () => {
   const { state } = useContext(Context)
   return (
     <section className={cn(style.intro, state.isDark && style.dark)}>
