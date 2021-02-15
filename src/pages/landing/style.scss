@@ -31,33 +31,4 @@
       text-align: center;
     }
   }
-
-  ul {
-    display: grid;
-    @include media("<=phone") {
-      text-align: center;
-    }
-    li {
-      list-style: none;
-      margin: 1.2rem 0;
-
-      @include media("<=phone") {
-        margin: 0.5rem 0;
-      }
-
-      a {
-        text-decoration: underline;
-        color: inherit;
-      }
-    }
-  }
-
-  .box-text-center {
-    margin: 3rem 2rem 2rem;
-    text-align: center;
-
-    @include media("<=phone") {
-      margin: 3rem 0 2rem;
-    }
-  }
 }

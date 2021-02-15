@@ -52,6 +52,27 @@
   }
 }
 
+.list {
+  display: grid;
+  @include media("<=phone") {
+    text-align: center;
+  }
+
+  &Item {
+    list-style: none;
+    margin: 1.2rem 0;
+
+    @include media("<=phone") {
+      margin: 0.5rem 0;
+    }
+
+    &Link {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}
+
 .skillsList {
   display: grid;
   grid-template-columns: 50% 50%;

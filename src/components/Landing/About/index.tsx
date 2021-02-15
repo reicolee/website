@@ -25,18 +25,21 @@ const About = ({ description, descriptionTwo, skills }) => {
         </div>
         <div className={cn("box", style.proficiencies)}>
           <h3 className="box-header">{SUBTITLE_ONE}</h3>
-          <ul className={style.skillsList}>
+          <ul className={cn(style.list, style.skillsList)}>
             {skills.map(skill => (
-              <li key={skill}>{skill}</li>
+              <li key={skill} className={style.listItem}>
+                {skill}
+              </li>
             ))}
           </ul>
         </div>
         <div className={cn("box", style.facts)}>
           <h3 className="box-header">{SUBTITLE_TWO}</h3>
-          <ul>
-            <li>
+          <ul className={style.list}>
+            <li className={style.listItem}>
               Born in{" "}
               <a
+                className={style.listItemLink}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 href="https://en.wikipedia.org/wiki/Name_of_Toronto#Nicknames"
@@ -45,11 +48,12 @@ const About = ({ description, descriptionTwo, skills }) => {
               </a>{" "}
               🇨🇦
             </li>
-            <li>Raised in +852 🇭🇰</li>
-            <li>Trilingual</li>
-            <li>
+            <li className={style.listItem}>Raised in +852 🇭🇰</li>
+            <li className={style.listItem}>Trilingual</li>
+            <li className={style.listItem}>
               Graduated from{" "}
               <a
+                className={style.listItemLink}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 href="https://www.sauder.ubc.ca/"
@@ -57,8 +61,8 @@ const About = ({ description, descriptionTwo, skills }) => {
                 UBC Sauder
               </a>
             </li>
-            <li>Taking naps with my cat 🐈</li>
-            <li>FIFA Ultimate Team 🎮</li>
+            <li className={style.listItem}>Taking naps with my cat 🐈</li>
+            <li className={style.listItem}>FIFA Ultimate Team 🎮</li>
           </ul>
         </div>
       </div>
