@@ -57,7 +57,7 @@ const About = ({ description, descriptionTwo, skills }) => {
                 UBC Sauder
               </a>
             </li>
-            <li>Walking my cats daily 🐈</li>
+            <li>Taking naps with my cat 🐈</li>
             <li>FIFA Ultimate Team 🎮</li>
           </ul>
         </div>

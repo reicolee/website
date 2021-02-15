@@ -3,7 +3,7 @@ module.exports = {
     title: 'Reico Lee | Software Engineer',
     metaDescription: 'Hi, I’m Reico Lee, a full stack software engineer based in NYC, specializing in web development with TypeScript, React, Node.js, Django, and more.',
     description: 'I’m a product-minded software engineer based in NYC. I love \
-    leveraging the use of technologies to leapfrog human/user \
+    building things with code, and leveraging the use of technologies to leapfrog human/user \
     problems. Regardless of how major or minor a problem is, you will \
     find me meticulously looking for a solution that fits the context. \
     I am a disciple of writing clean, maintainable, and well-tested code so my fellow devs \
