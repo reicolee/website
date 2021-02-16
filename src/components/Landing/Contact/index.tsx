@@ -12,11 +12,7 @@ const CTA_TITLE = "What's next?"
 const CTA_SUBTITLE = "Have questions? Want to learn more?"
 const CTA = "Let's connect!"
 
-interface Props {
-  works: any[]
-}
-
-const Contact = ({ works }: Props) => {
+const Contact = () => {
   const { state } = useContext(Context)
   return (
     <Section

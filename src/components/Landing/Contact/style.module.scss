@@ -4,12 +4,7 @@
 .content {
   grid-column: 2 / 2;
   display: grid;
-  grid-template-columns: 50% 50%;
-
-  @include media(">tablet", "<1260px") {
-    grid-column: 1;
-    grid-template-columns: 100%;
-  }
+  grid-template-columns: 100%;
 
   @include media("<=tablet") {
     grid-column: 1;
@@ -49,7 +44,8 @@
   cursor: pointer;
   color: inherit;
   text-decoration: underline;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-size: 28px;
   font-weight: bold;
   width: 200px;
