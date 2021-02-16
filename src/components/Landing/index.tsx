@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import Intro from "./Intro"
 import About from "./About"
 import Work from "./Work"
+import Contact from "./Contact"
 
 const Landing = ({ data }) => (
   <>
@@ -14,6 +15,7 @@ const Landing = ({ data }) => (
       skills={data.skills}
     />
     <Work works={data.works} />
+    <Contact />
   </>
 )
 
