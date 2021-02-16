@@ -1,0 +1,75 @@
+@import "src/styles/colors.scss";
+@import "src/styles/breakpoints.scss";
+
+.content {
+  grid-column: 2 / 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include media(">tablet", "<1260px") {
+    grid-column: 1;
+    grid-template-columns: 100%;
+  }
+
+  @include media("<=tablet") {
+    grid-column: 1;
+    grid-template-columns: 100%;
+  }
+}
+
+.item {
+  grid-column: 1 / 3;
+  background-color: $light0Color;
+  color: $lightFont0Color;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+  .dark & {
+    background-color: $dark0Color;
+    color: $darkFont0Color;
+  }
+
+  @include media("<=1500px") {
+    padding: 10px !important;
+  }
+
+  @include media("<1260px") {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  @include media("<=phone") {
+    padding: 50px !important;
+  }
+}
+
+.cta {
+  display: block;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+  margin-top: 4rem;
+  font-size: 28px;
+  font-weight: bold;
+  width: 200px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+  @include media("<1260px") {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+
+  @include media("<1024px") {
+    margin-top: 5%;
+    margin-bottom: 20%;
+  }
+
+  &:hover {
+    color: $lightSpecialColor;
+
+    .dark & {
+      color: $darkSpecialColor;
+    }
+  }
+}
