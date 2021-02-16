@@ -7,8 +7,8 @@ import Box from "src/components/system/Box"
 
 import style from "./style.module.scss"
 
-const TITLE = "Say hi!"
-const CTA_TITLE = "What's next?"
+const TITLE = "Contact."
+const CTA_TITLE = "leereico@gmail.com"
 const CTA_SUBTITLE = "Have questions? Want to learn more?"
 const CTA = "Let's connect!"
 

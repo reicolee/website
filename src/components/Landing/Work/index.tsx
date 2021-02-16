@@ -13,8 +13,7 @@ import style from "./style.module.scss"
 
 const TITLE = "Work."
 const CTA_TITLE = "What's next?"
-const CTA_SUBTITLE = "Have questions? Want to learn more?"
-const CTA = "Let's connect!"
+const CTA_SUBTITLE = "TBD :)"
 
 interface Props {
   works: any[]
@@ -41,12 +40,6 @@ const Work = ({ works }: Props) => {
       ))}
       <Box className={style.item3} title={CTA_TITLE}>
         <p className={style.boxDescription}>{CTA_SUBTITLE}</p>
-        <a
-          className={style.cta}
-          href="mailto:leereico@gmail.com?body=Hi Reico!"
-        >
-          {CTA}
-        </a>
       </Box>
     </Section>
   )

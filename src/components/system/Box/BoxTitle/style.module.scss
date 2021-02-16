@@ -2,7 +2,7 @@
 @import "src/styles/breakpoints.scss";
 
 .title {
-  font-size: 46px;
+  font-size: 50px;
   line-height: 1.3em;
   margin: 60px auto 0.7em;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -16,7 +16,7 @@
   letter-spacing: -0.03em;
 
   @include media("<=phone") {
-    font-size: 32px;
+    font-size: 34px;
     margin-top: 2rem;
     margin-bottom: 2.5rem;
     text-align: center;
