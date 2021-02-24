@@ -20,7 +20,8 @@ const Contact = () => {
       className={cn(style.content, state.isDark && style.dark)}
       title={TITLE}
     >
-      <Box className={style.item} title={CTA_TITLE}>
+      <Box className={style.item}>
+        <h3 className={style.boxTitle}>{CTA_TITLE}</h3>
         <p className={style.boxDescription}>{CTA_SUBTITLE}</p>
         <a
           className={style.cta}
