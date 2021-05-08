@@ -7,8 +7,9 @@ import Context from "src/store/context"
 import portrait from "src/images/portrait.jpg"
 
 const PROFESSION = "Full Stack Software Engineer."
-const FORMER_COMPANY = "@BentoBox"
-const CURRENT_COMPANY = "@Double"
+const FORMER_COMPANY_ONE = "@BentoBox"
+const FORMER_COMPANY_TWO = "@Double"
+const CURRENT_COMPANY = "@Justworks"
 const CTA = "View resumé"
 
 import style from "./style.module.scss"
@@ -28,7 +29,7 @@ const Intro = () => {
               className={style.companyLink}
               target="_blank"
               rel="nofollow noopener noreferrer"
-              href="https://withdouble.com"
+              href="https://justworks.com/"
             >
               {CURRENT_COMPANY}
             </a>
@@ -39,7 +40,16 @@ const Intro = () => {
               rel="nofollow noopener noreferrer"
               href="https://getbento.com/"
             >
-              {FORMER_COMPANY}
+              {FORMER_COMPANY_ONE}
+            </a>
+            {", "}
+            <a
+              className={style.companyLink}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href="https://withdouble.com"
+            >
+              {FORMER_COMPANY_TWO}
             </a>
             .
           </p>

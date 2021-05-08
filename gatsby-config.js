@@ -18,7 +18,7 @@ module.exports = {
         to iterate on core features development, work primarily in two \
         React frontend applications that facilitate and improve the \
         delegation experienece between executives and assistants.',
-        tenure: '2019 - Present',
+        tenure: '2019 - 2021',
       },
       {
         title: 'BentoBox',
